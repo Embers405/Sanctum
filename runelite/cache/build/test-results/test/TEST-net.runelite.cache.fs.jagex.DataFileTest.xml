@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.runelite.cache.fs.jagex.DataFileTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-16T16:37:20" hostname="HOWARD" time="0.042">
+  <properties/>
+  <testcase name="testEnc" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.004"/>
+  <testcase name="testEncGz" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.002"/>
+  <testcase name="testBZip2Compression" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.005"/>
+  <testcase name="test1" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.002"/>
+  <testcase name="test2" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.014"/>
+  <testcase name="testGZipCompression" classname="net.runelite.cache.fs.jagex.DataFileTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

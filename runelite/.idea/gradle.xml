@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/cache" />
+            <option value="$PROJECT_DIR$/deobfuscator" />
+            <option value="$PROJECT_DIR$/http-api" />
+            <option value="$PROJECT_DIR$/injection-annotations" />
+            <option value="$PROJECT_DIR$/injector" />
+            <option value="$PROJECT_DIR$/runelite-api" />
+            <option value="$PROJECT_DIR$/runelite-client" />
+            <option value="$PROJECT_DIR$/runelite-jshell" />
+            <option value="$PROJECT_DIR$/runelite-mixins" />
+            <option value="$PROJECT_DIR$/runelite-script-assembler-plugin" />
+            <option value="$PROJECT_DIR$/runescape-api" />
+            <option value="$PROJECT_DIR$/runescape-client" />
+            <option value="$PROJECT_DIR$/wiki-scraper" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

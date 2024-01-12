@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1595,
+    "amount": 0,
+    "x": 2928,
+    "y": 3290,
+    "z": 0,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 11065,
+    "amount": 0,
+    "x": 2928,
+    "y": 3289,
+    "z": 0,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 2347,
+    "amount": 0,
+    "x": 2934,
+    "y": 3286,
+    "z": 0,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1755,
+    "amount": 0,
+    "x": 2935,
+    "y": 3286,
+    "z": 0,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1935,
+    "amount": 0,
+    "x": 2936,
+    "y": 3292,
+    "z": 0,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1735,
+    "amount": 0,
+    "x": 2930,
+    "y": 3285,
+    "z": 1,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1599,
+    "amount": 0,
+    "x": 2931,
+    "y": 3287,
+    "z": 1,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1597,
+    "amount": 0,
+    "x": 2932,
+    "y": 3287,
+    "z": 1,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 1592,
+    "amount": 0,
+    "x": 2935,
+    "y": 3283,
+    "z": 1,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 5523,
+    "amount": 0,
+    "x": 2935,
+    "y": 3282,
+    "z": 1,
+    "respawnSeconds": 0
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2907,
+    "y": 3295,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2906,
+    "y": 3297,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2917,
+    "y": 3274,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1835,
+    "y": 3596,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1830,
+    "y": 3600,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1837,
+    "y": 3602,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1831,
+    "y": 3609,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1838,
+    "y": 3614,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1833,
+    "y": 3619,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1839,
+    "y": 3625,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1834,
+    "y": 3628,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1837,
+    "y": 3634,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1841,
+    "y": 3635,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1839,
+    "y": 3641,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1837,
+    "y": 3642,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 1841,
+    "y": 3643,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2507,
+    "y": 3724,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2517,
+    "y": 3722,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2528,
+    "y": 3725,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2530,
+    "y": 3734,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2529,
+    "y": 3743,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2528,
+    "y": 3752,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2532,
+    "y": 3756,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2517,
+    "y": 3757,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2507,
+    "y": 3759,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2520,
+    "y": 3764,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2530,
+    "y": 3766,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2540,
+    "y": 3761,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2546,
+    "y": 3757,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  },
+  {
+    "id": 231,
+    "amount": 1,
+    "x": 2550,
+    "y": 3751,
+    "z": 0,
+    "world": "ECO",
+    "itemName": "Snape grass",
+    "respawnSeconds": 10
+  }
+]

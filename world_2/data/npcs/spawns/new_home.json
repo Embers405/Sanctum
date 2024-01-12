@@ -1,0 +1,409 @@
+[
+  {
+    "name": "Horphis Teleporter NPC",
+    "id": "7046",
+    "x": "3087",
+    "y": "3500",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "2",
+    "world": "ECO"
+  },
+  {
+    "name": "Evil dave",
+    "id": "901",
+    "x": "1633",
+    "y": "3663",
+    "z": "0",
+    "direction": "N",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "krystilia",
+    "id": 7663,
+    "x": 3074,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0
+  },
+  {
+    "name": "Grand Exchange Clerk",
+    "id": 2149,
+    "x": 3097,
+    "y": 3495,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0
+  },
+  {
+    "name": "Grand Exchange Clerk",
+    "id": 2148,
+    "x": 3097,
+    "y": 3496,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0
+  },
+  {
+    "name": "Fountain Of Uhld",
+    "id": "14750",
+    "x": "1691",
+    "y": "3751",
+    "z": "0",
+    "direction": "W",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Sergeant Ricardo",
+    "id": "11061",
+    "x": "3100",
+    "y": "3498",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Security Advisor",
+    "id": "5442",
+    "x": "3106",
+    "y": "3498",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Shop",
+    "id": "5081",
+    "x": "3084",
+    "y": "3510",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "0",
+    "shopOptions": {
+      "magic": "64473b09-f91f-44b6-93be-4c36b4d19133",
+      "armour": "3a66d8c1-dd6f-444e-a91e-24ea1f0135c0"
+    }
+  },
+  {
+    "name": "Shop",
+    "id": "5051",
+    "x": "3085",
+    "y": "3510",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "0",
+    "shopOptions": {
+      "ranged": "c1acaaeb-7e71-492d-97f1-ba2d38c90648",
+      "armour": "4643a9b8-4ccb-4180-bfbc-ad340319fef2"
+    }
+  },
+  {
+    "name": "Shop",
+    "id": "2153",
+    "x": "3083",
+    "y": "3510",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "0",
+    "shopOptions": {
+      "melee": "d8644890-1eb6-47c6-a074-ccb2833f8ea6",
+      "armour": "81c7cb3a-f03f-4862-9d3e-3d63ddb64a8a"
+    }
+  },
+  {
+    "name": "Makeover Mage",
+    "id": "1307",
+    "x": "3100",
+    "y": "3487",
+    "z": "0",
+    "direction": "N",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Justine",
+    "id": "8721",
+    "x": "3116",
+    "y": "3493",
+    "z": "0",
+    "direction": "W",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Lisa",
+    "id": "7316",
+    "x": "3098",
+    "y": "3493",
+    "z": "0",
+    "direction": "E",
+    "walkRange": "0",
+    "world": "ECO"
+  },
+  {
+    "name": "Mac Cape Shop",
+    "id": "6481",
+    "x": "3085",
+    "y": "3488",
+    "z": "0",
+    "direction": "S",
+    "walkRange": "2",
+    "world": "ECO"
+  },
+  {
+    "name": "Supply Shop",
+    "id": "2814",
+    "x": "3081",
+    "y": "3510",
+    "z": "0",
+    "direction": "E",
+    "walkRange": "0",
+    "world": "ECO",
+    "shopOptions": {
+      "trade": "NOOBSUPPLYSHOPATHOME"
+    }
+  },
+  {
+    "name": "Sawmill operator",
+    "id": 5422,
+    "x": 3075,
+    "y": 3500,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "a1e55885-3aa4-4d63-8a5e-5808c01f54e0"
+    }
+  },
+  {
+    "name": "PVM Shop Stranger",
+    "id": 10876,
+    "x": 3082,
+    "y": 3513,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "PVMPOINTSHOPPOG"
+    }
+  },
+  {
+    "name": "Zanik",
+    "id": 2318,
+    "x": 3074,
+    "y": 3491,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0
+  },
+  {
+    "name": "Drunken Dwarf",
+    "id": 2408,
+    "x": 3093,
+    "y": 3487,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 2
+  },
+  {
+    "name": "Jatix",
+    "id": 8532,
+    "x": 3081,
+    "y": 3511,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "SECONDARIESUPPLYSTORE"
+    }
+  },
+  {
+    "name": "STARDUSTSHOP22",
+    "id": 10631,
+    "x": 3088,
+    "y": 3511,
+    "z": 0,
+    "direction": "W",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "STARDUSTSHOP22"
+    }
+  },
+  {
+    "name": "Horvik",
+    "id": 2882,
+    "x": 3086,
+    "y": 3510,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 0,
+    "world": "ECO",
+    "shopOptions": {
+      "trade": "GbU56FiI2KwFf9uLt5wSDlAbVUK5Jy"
+    }
+  },
+  {
+    "name": "Vannaka",
+    "id": 403,
+    "x": 3078,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"
+    }
+  },
+  {
+    "name": "Turael",
+    "id": 401,
+    "x": 3079,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"
+    }
+  },
+  {
+    "name": "Konar Quo Maten",
+    "id": 8623,
+    "x": 3077,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"
+    }
+  },
+  {
+    "name": "Nieve",
+    "id": 6797,
+    "x": 3076,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"
+    }
+  },
+  {
+    "name": "Vote Manager",
+    "id": 1815,
+    "x": 3105,
+    "y": 3498,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 0
+  },
+  {
+    "name": "Shop assistant",
+    "id": 2820,
+    "x": 1694,
+    "y": 3720,
+    "z": 0,
+    "direction": "W",
+    "walkRange": 1,
+    "shopOptions": {
+      "Trade": "e522b145-fbaa-4746-8d71-6ad9808d2338"
+    }
+  },
+
+
+  {
+    "name": "Donation Manager",
+    "id": 2108,
+    "x": 3104,
+    "y": 3498,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 0
+  },
+
+  {
+    "name": "Ironman",
+    "id": 7941,
+    "x": 3119,
+    "y": 3511,
+    "z": 0,
+    "direction": "W",
+    "walkRange": 0
+  },
+  {
+    "name": "Estate agent",
+    "id": 3097,
+    "x": 3072,
+    "y": 3506,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0
+  },
+
+  {
+    "name": "Emblem Trader",
+    "id": 308,
+    "x": 3101,
+    "y": 3503,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 5,
+    "world": "ECO"
+  },
+
+  {
+    "name": "Twiggy O\u0027Korn",
+    "id": 5527,
+    "x": 3098,
+    "y": 3489,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0,
+    "shopOptions": {
+      "rewards": "afd8d69d-37c8-44d9-bfec-680bfaf4dfa4"
+    }
+  },
+
+  {
+    "name": "Doctor Daily",
+    "id": 3984,
+    "x": 3099,
+    "y": 3498,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 0
+  },
+
+  {
+    "name": "Zahur",
+    "id": 4753,
+    "x": 3088,
+    "y": 3510,
+    "z": 0,
+    "direction": "W",
+    "walkRange": 0
+  },
+
+  {
+    "name": "Duradel",
+    "id": 405,
+    "x": 3075,
+    "y": 3489,
+    "z": 0,
+    "direction": "N",
+    "walkRange": 0,
+    "shopOptions": {
+      "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"
+    }
+
+
+
+  }
+]

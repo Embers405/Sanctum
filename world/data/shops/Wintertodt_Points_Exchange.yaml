@@ -1,0 +1,68 @@
+---
+identifier: "Ys9Fq6EN8jZcfhUVabt1xaDXkTLlZvA7"
+title: "Wintertodt Points Exchange"
+currency: "WINTERTODT_POINTS"
+accessibleByIronMan: true
+accessibleByRegular: true
+canSellToStore: false
+restockRules:
+  restockTicks: 30
+  restockPerTick: 1
+defaultStock:
+- id: 20703
+  amount: 2000
+  price: 500
+- id: 20718
+  amount: 2000
+  price: 50
+- id: 20716
+  amount: 2000
+  price: 12000
+- id: 20708
+  amount: 2000
+  price: 12000
+- id: 20704
+  amount: 2000
+  price: 12000
+- id: 20706
+  amount: 2000
+  price: 12000
+- id: 20710
+  amount: 2000
+  price: 12000
+- id: 20712
+  amount: 2000
+  price: 12000
+- id: 20720
+  amount: 2000
+  price: 12000
+- id: 30356
+  amount: 2000
+  price: 12000
+- id: 30357
+  amount: 2000
+  price: 12000
+- id: 30358
+  amount: 2000
+  price: 12000
+- id: 30359
+  amount: 2000
+  price: 12000
+- id: 30360
+  amount: 2000
+  price: 12000
+- id: 30362
+  amount: 2000
+  price: 12000
+- id: 30363
+  amount: 2000
+  price: 120000
+- id: 30364
+  amount: 2000
+  price: 12000
+- id: 30365
+  amount: 2000
+  price: 12000
+- id: 30366
+  amount: 2000
+  price: 12000

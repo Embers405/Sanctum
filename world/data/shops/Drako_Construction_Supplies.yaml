@@ -1,0 +1,35 @@
+---
+identifier: "ObsidianCONSUPPLIES"
+title: "Obsidian  Construction Supplies"
+currency: "COINS"
+accessibleByIronMan: true
+accessibleByRegular: true
+canSellToStore: true
+restockRules:
+  restockTicks: 30
+  restockPerTick: 1
+priceRules:
+  sellsAt: 40
+  buysAt: 30
+  changePer: 3
+defaultStock:
+  - id: 1539
+    price: 15
+    amount: 1000000
+  - id: 8794
+    amount: 50
+  - id: 2347
+    price: 6
+    amount: 50
+  - id: 8786
+    amount: 50
+    price: 25000
+  - id: 3420
+    price: 5000
+    amount: 50
+  - id: 4692
+    price: 150000
+    amount: 50
+  - id: 8790
+    price: 5000
+    amount: 50

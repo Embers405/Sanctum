@@ -1,0 +1,60 @@
+---
+identifier: "MAGETRAININGARENASHOP"
+title: "Obsidian's Mage Arena Point Shop"
+currency: "MAGE_ARENA_POINTS"
+accessibleByIronMan: true
+accessibleByRegular: true
+canSellToStore: false
+restockRules:
+  restockTicks: 30
+  restockPerTick: 1
+priceRules:
+  sellsAt: 40
+  buysAt: 30
+  changePer: 3
+defaultStock:
+  - id: 6918
+    price: 250
+    amount: 100
+  - id: 6916
+    price: 250
+    amount: 100
+  - id: 6924
+    price: 250
+    amount: 100
+  - id: 6922
+    price: 250
+    amount: 100
+  - id: 6920
+    price: 300
+    amount: 100
+  - id: 6889
+    price: 250
+    amount: 100
+  - id: 12791
+    price: 300
+    amount: 100
+  - id: 3844
+    price: 150
+    amount: 100
+  - id: 12612
+    price: 150
+    amount: 100
+  - id: 12610
+    price: 150
+    amount: 100
+  - id: 12608
+    price: 150
+    amount: 100
+  - id: 3840
+    price: 150
+    amount: 100
+  - id: 3842
+    price: 150
+    amount: 100
+  - id: 6914
+    price: 300
+    amount: 100
+  - id: 4675
+    price: 150
+    amount: 100

@@ -1,0 +1,102 @@
+---
+identifier: "11ddf699-41d6-4d0a-8c05-5b3c721b0849"
+title: "Ironman Store"
+currency: "COINS"
+accessibleByIronMan: true
+accessibleByRegular: false
+canSellToStore: true
+generalStore: true
+restockRules:
+  restockTicks: 30
+  restockPerTick: 1
+priceRules:
+  sellsAt: 150
+  buysAt: 40
+  changePer: 2
+defaultStock:
+  - id: 952
+    amount: 2000
+  - id: 5341
+    amount: 2000
+  - id: 5343
+    amount: 2000
+  - id: 10006
+    amount: 2000
+  - id: 10008
+    amount: 2000
+  - id: 10012
+    amount: 2000
+  - id: 11260
+    amount: 2000
+  - id: 10010
+    amount: 2000
+  - id: 955
+    amount: 2000
+  - id: 228
+    amount: 2000
+  - id: 233
+    amount: 2000
+  - id: 2446
+    amount: 2000
+  - id: 10499
+    amount: 2000
+  - id: 544
+    amount: 2000
+  - id: 542
+    amount: 2000
+  - id: 3105
+    amount: 2000
+  - id: 2417
+    amount: 2000
+  - id: 2415
+    amount: 2000
+  - id: 2416
+    amount: 2000
+  - id: 8880
+    amount: 2000
+  - id: 8882
+    amount: 2000
+  - id: 590
+    amount: 2000
+  - id: 1755
+    amount: 2000
+  - id: 2347
+    amount: 2000
+  - id: 9672
+    amount: 2000
+  - id: 9674
+    amount: 2000
+  - id: 9676
+    amount: 2000
+  - id: 1267
+    amount: 1
+    price: 50
+  - id: 1349
+    amount: 1
+    price: 50
+  - id: 1273
+    amount: 1
+    price: 5000
+  - id: 1355
+    amount: 1
+    price: 5000
+  - id: 1275
+    amount: 1
+    price: 128000
+  - id: 1359
+    amount: 1
+    price: 51200
+  - id: 303
+    amount: 1
+  - id: 305
+    amount: 1
+  - id: 301
+    amount: 1
+  - id: 311
+    amount: 1
+  - id: 3157
+    amount: 1
+  - id: 3150
+    amount: 2000
+  - id: 946
+    amount: 2000

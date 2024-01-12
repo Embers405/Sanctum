@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.runelite.cache.SoundEffectsDumperTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2023-11-16T16:37:34" hostname="HOWARD" time="7.084">
+  <properties/>
+  <testcase name="test" classname="net.runelite.cache.SoundEffectsDumperTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="extractWavTest" classname="net.runelite.cache.SoundEffectsDumperTest" time="7.084"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

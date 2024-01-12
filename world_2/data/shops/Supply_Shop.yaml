@@ -1,0 +1,50 @@
+---
+identifier: "NOOBSUPPLYSHOPATHOME"
+title: "Obsidian's Supply Shop"
+currency: "COINS"
+accessibleByIronMan: false
+accessibleByRegular: true
+canSellToStore: false
+restockRules:
+  restockTicks: 30
+  restockPerTick: 1
+priceRules:
+  sellsAt: 100
+  buysAt: 50
+  changePer: 2
+defaultStock:
+  - id: 2445
+    amount: 200
+  - id: 7947
+    amount: 200
+    price: 1200
+  - id: 374
+    amount: 1000
+    price: 500
+  - id: 3025
+    amount: 50
+    price: 400
+  - id: 2437
+    amount: 10
+    price: 750
+  - id: 2441
+    amount: 200
+    price: 750
+  - id: 2443
+    amount: 200
+    price: 750
+  - id: 3041
+    amount: 200
+    price: 750
+  - id: 12626
+    amount: 200
+    price: 2000
+  - id: 2449
+    amount: 200
+    price: 3000
+  - id: 2435
+    amount: 200
+    price: 20000
+  - id: 2453
+    amount: 200
+    price: 3000
