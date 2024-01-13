@@ -18,7 +18,7 @@ public class EventBossEmbedMessage {
         eb.setDescription(location);
         eb.setImage(boss.getEmbedUrl());
         eb.setColor(new Color(0xB00D03));
-        DiscordConnection.jda.getTextChannelById("984906544929984512").sendMessageEmbeds(eb.build()).queue();
+        DiscordConnection.jda.getTextChannelById("1175285001382797322").sendMessageEmbeds(eb.build()).queue();
         System.out.println("Embed sent!");
     }
 }

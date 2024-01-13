@@ -215,7 +215,7 @@ public class Loggers extends DatabaseUtils {
                 eb.addField("Trader2 Amount: ", String.valueOf(finalPrice2), true);
                 eb.addField("Date: ", formatter.format(date), true);
                 eb.setColor(new java.awt.Color(0xB00D03));
-                DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+                DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
             }
         }
         Server.gameDb.execute(con -> {
@@ -314,7 +314,7 @@ public class Loggers extends DatabaseUtils {
                         eb.addField("Amount: ", NumberFormat.getInstance().format(value1), true);
                         eb.addField("Date: ", formatter.format(date), true);
                         eb.setColor(new java.awt.Color(0xB00D03));
-                        DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+                        DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                     }
                 }
             }
@@ -350,7 +350,7 @@ public class Loggers extends DatabaseUtils {
             eb.addField("Amount: ", NumberFormat.getInstance().format(amount), true);
             eb.addField("Date: ", formatter.format(date), true);
             eb.setColor(new java.awt.Color(0xB00D03));
-            DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
         }
     }
 
@@ -370,7 +370,7 @@ public class Loggers extends DatabaseUtils {
             eb.addField("Player2 Amount: ", NumberFormat.getInstance().format(amount2), true);
             eb.addField("Date: ", formatter.format(date), true);
             eb.setColor(new java.awt.Color(0xB00D03));
-            DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
         }
     }
 
@@ -390,7 +390,7 @@ public class Loggers extends DatabaseUtils {
             eb.addField("Amount: ", NumberFormat.getInstance().format(amount), true);
             eb.addField("Date: ", formatter.format(date), true);
             eb.setColor(new java.awt.Color(0xB00D03));
-            DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
         }
 
     }
@@ -408,7 +408,7 @@ public class Loggers extends DatabaseUtils {
             eb.addField("Amount: ", NumberFormat.getInstance().format(amount), true);
             eb.addField("Date: ", formatter.format(date), true);
             eb.setColor(new java.awt.Color(0xB00D03));
-            DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
         }
     }
 

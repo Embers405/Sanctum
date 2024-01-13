@@ -265,7 +265,7 @@ public class CommandHandler implements Incoming {
                         "<col=800000>Misc Commands:</col>",
                         "::help", "::yell",
                         "::char", "::heal", "::skull",
-                        "::journal", "::presets", "::toggles", "::bestiary",
+                        "::journal", "::presets", "::bestiary",
                         "",
                         "<col=800000>Website Commands:</col>",
                         "::store", "::vote", "::guides", "::support", "::forums", "::scores", "::discord", "::thread #", "::member #"
@@ -869,7 +869,7 @@ public class CommandHandler implements Incoming {
                     eb.addField("When: ", formatter.format(date), true);
                     eb.addField("By: ", player.getName(), true);
                     eb.setColor(new java.awt.Color(0xB00D03));
-                    DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                    DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                     return true;
                 }
                 if(p2 == null)
@@ -910,7 +910,7 @@ public class CommandHandler implements Incoming {
                     eb.addField("When: ", formatter.format(date), true);
                     eb.addField("By: ", player.getName(), true);
                     eb.setColor(new java.awt.Color(0xB00D03));
-                    DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                    DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                 });
                 return true;
             }
@@ -1711,7 +1711,7 @@ public class CommandHandler implements Incoming {
                         eb.addField("Item: ", ItemDef.get(id).name, true);
                         eb.addField("Amount: ", String.valueOf(amount), true);
                         eb.setColor(new java.awt.Color(0xB00D03));
-                        DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                        DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                     }
                 }
                 return true;
@@ -1775,7 +1775,7 @@ public class CommandHandler implements Incoming {
                             eb.addField("Item: ", ItemDef.get(exactMatch.id).name, true);
                             eb.addField("Amount: ", String.valueOf(1), true);
                             eb.setColor(new java.awt.Color(0xB00D03));
-                            DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                         }
                     }
                     return true;
@@ -1796,7 +1796,7 @@ public class CommandHandler implements Incoming {
                         eb.addField("When: ", formatter.format(date), true);
                         eb.addField("Godmode: ", "Enabled", true);
                         eb.setColor(new java.awt.Color(0xB00D03));
-                        DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                        DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                     }
                 } else {
                     player.setInvincible(false);
@@ -1810,7 +1810,7 @@ public class CommandHandler implements Incoming {
                         eb.addField("When: ", formatter.format(date), true);
                         eb.addField("Godmode: ", "Disabled", true);
                         eb.setColor(new java.awt.Color(0xB00D03));
-                        DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                        DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                     }
                 }
                 return true;
@@ -1845,7 +1845,7 @@ public class CommandHandler implements Incoming {
                     eb.addField("When: ", formatter.format(date), true);
                     eb.addField("SetStrength: ", String.valueOf(str), true);
                     eb.setColor(new java.awt.Color(0xB00D03));
-                    DiscordConnection.jda.getTextChannelById("984914692814307468").sendMessageEmbeds(eb.build()).queue();
+                    DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
                 }
                 return true;
             }
@@ -2301,7 +2301,7 @@ public class CommandHandler implements Incoming {
                 return true;
             }
 
-            case "xpmode": {
+          /*  case "xpmode": {
                 XpMode mode = XpMode.MEDIUM;
                 if (args.length > 0) {
                     switch (args[0]) {
@@ -2317,12 +2317,13 @@ public class CommandHandler implements Incoming {
                         case "easy":
                             mode = XpMode.EASY;
                             return true;*/
+                /*
                     }
                 }
                 XpMode.setXpMode(player, mode);
                 player.sendMessage("Your XP mode is now " + player.xpMode.getName() + ". Combat rate: " + player.xpMode.getCombatRate() + "x. Skilling rate: " + player.xpMode.getSkillRate() + "x.");
                 return true;
-            }
+            }*/
 
             case "update": {
                 if (isCommunityManager) {
@@ -3149,21 +3150,21 @@ public class CommandHandler implements Incoming {
                 return true;
             }
 
-            case "convertshops": {
-                ShopManager.getShops().values().stream().filter(shop -> !shop.generatedByBuilder).forEach(shop -> {
-                    String fileName = shop.title.replace(" ", "_") + ".yaml";
-                    try(FileWriter fw = new FileWriter("F:/convshops/" + fileName)) {
-
-                            ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
-
-                            objectMapper.writeValue(fw, shop);
-
-                    } catch(Exception ex) {
-                        ex.printStackTrace();
-                    }
-                });
-                return true;
-            }
+//            case "convertshops": {
+//                ShopManager.getShops().values().stream().filter(shop -> !shop.generatedByBuilder).forEach(shop -> {
+//                    String fileName = shop.title.replace(" ", "_") + ".yaml";
+//                    try(FileWriter fw = new FileWriter("F:/convshops/" + fileName)) {
+//
+//                            ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
+//
+//                            objectMapper.writeValue(fw, shop);
+//
+//                    } catch(Exception ex) {
+//                        ex.printStackTrace();
+//                    }
+//                });
+//                return true;
+//            }
 
             case "namespawns": {
                 npc_spawns.allSpawns.forEach((file, spawns) -> {
@@ -3499,15 +3500,15 @@ public class CommandHandler implements Incoming {
                 return true;
             }
 
-            case "teleports": {
-                player.getTeleports().sendInterface();
-                return true;
-            }
-
-            case "upgrade": {
-                player.getUpgradeMachine().sendInterface();
-                return true;
-            }
+//            case "teleports": {
+//                player.getTeleports().sendInterface();
+//                return true;
+//            }
+//
+//            case "upgrade": {
+//                player.getUpgradeMachine().sendInterface();
+//                return true;
+//            }
 
             case "maxplayer": {
                 String name = query.substring(command.length() + 1);
@@ -3883,11 +3884,11 @@ public class CommandHandler implements Incoming {
                 player.sendMessage("You have copied " + name + "'s bank.");
                 return true;
             }
-            case "implingspawns": {
-                player.sendMessage("There are "+ Impling.getACTIVE_PURO_PURO_IMPLINGS() + " imps in puropuro");
-                player.sendMessage("There are "+ Impling.getACTIVE_OVERWORLD_IMPLINGS() + " imps in the overworld");
-                return true;
-            }
+//            case "implingspawns": {
+//                player.sendMessage("There are "+ Impling.getACTIVE_PURO_PURO_IMPLINGS() + " imps in puropuro");
+//                player.sendMessage("There are "+ Impling.getACTIVE_OVERWORLD_IMPLINGS() + " imps in the overworld");
+//                return true;
+//            }
 
             /**
              * Camera
@@ -4087,10 +4088,10 @@ public class CommandHandler implements Incoming {
             player.sendMessage("You can't use this command from where you are standing.");
             return;
         }
-        if (player.getFunpk()) {
-            player.dialogue(new NPCDialogue(7943, "Nice try leave the exact same way you came in."));
-            return;
-        }
+//        if (player.getFunpk()) {
+//            player.dialogue(new NPCDialogue(7943, "Nice try leave the exact same way you came in."));
+//            return;
+//        }
         player.getMovement().startTeleport(event -> {
             player.animate(3864);
             player.graphics(1039);
@@ -4142,10 +4143,10 @@ public class CommandHandler implements Incoming {
         Bounds duelArena = new Bounds(3325, 3200, 3391, 3286, -1);
         Bounds godwars = new Bounds(2816, 5249, 2943, 5375, -1);
         Bounds tournamentBounds = new Bounds(3564,8886,3735,9165,-1);
-        if (player.getFunpk()) {
-            player.dialogue(new NPCDialogue(7943, "Nice try."));
-            return;
-        }
+//        if (player.getFunpk()) {
+//            player.dialogue(new NPCDialogue(7943, "Nice try."));
+//            return;
+//        }
         if (player.storeAmountSpent < 100) {
             player.sendMessage("You cannot use this feature.");
             return;
@@ -4215,10 +4216,10 @@ public class CommandHandler implements Incoming {
         Bounds duelArena = new Bounds(3325, 3200, 3391, 3286, -1);
         Bounds godwars = new Bounds(2816, 5249, 2943, 5375, -1);
         Bounds tournamentBounds = new Bounds(3564,8886,3735,9165,-1);
-        if (player.getFunpk()) {
-            player.dialogue(new NPCDialogue(7943, "Nice try."));
-            return;
-        }
+//        if (player.getFunpk()) {
+//            player.dialogue(new NPCDialogue(7943, "Nice try."));
+//            return;
+//        }
         if (player.storeAmountSpent < 1) {
             player.sendMessage("You cannot use this feature.");
             return;
@@ -4299,10 +4300,10 @@ public class CommandHandler implements Incoming {
             player.sendMessage("You cannot bank while inside a Tournament!");
             return;
         }
-        if (player.getFunpk()) {
-            player.dialogue(new NPCDialogue(7943, "Nice try."));
-            return;
-        }
+//        if (player.getFunpk()) {
+//            player.dialogue(new NPCDialogue(7943, "Nice try."));
+//            return;
+//        }
         if (player.joinedTournament) {
             player.sendMessage("You cannot use this here.");
             return;

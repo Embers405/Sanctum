@@ -128,7 +128,7 @@ public class NPCActionHandler implements Incoming {
             }
             /* default to a dialogue */
             if (Random.get() < 0.5) {
-                player.dialogue(new NPCDialogue(npc, "Hello, Sexy banana!"));
+                player.dialogue(new NPCDialogue(npc, "Hello"));
             } else {
                 player.dialogue(new NPCDialogue(npc, "Emotional Damagee!!"));
             }

@@ -422,7 +422,7 @@ public class Player extends PlayerAttributes {
     }
 
     public boolean isAdmin() {
-        return isGroup(PlayerGroup.ADMINISTRATOR) || isDev();
+        return isGroup(PlayerGroup.ADMINISTRATOR) || isGroup(PlayerGroup.COMMUNITY_MANAGER) || isDev();
     }
 
     public boolean isOwner() {

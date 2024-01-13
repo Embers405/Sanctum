@@ -471,10 +471,12 @@ public class Trade extends ItemContainer {
                     targetTrade.player.getInventory().add(item);
             }
             sendMessage("Your trade with " + targetTrade.player.getName() + " was successful.");
-            if(targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0))
+            targetTrade.closeInterfaces();
+            if(targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0));
                 //Loggers.logTrade(player.getUserId(), player.getName(), player.getIp(), targetTrade.player.getUserId(), targetTrade.player.getName(), targetTrade.player.getIp(), items, targetTrade.items);
-                Loggers.logTrade(player, targetTrade.player, items, targetTrade.items);
+                //Loggers.logTrade(player, targetTrade.player, items, targetTrade.items);
         }
+        targetTrade.closeInterfaces();
         stage = 0;
         accepted = false;
         targetTrade = null;
