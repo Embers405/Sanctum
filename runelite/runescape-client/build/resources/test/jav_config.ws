@@ -1,7 +1,7 @@
 title=Sanctum
 adverturl=http://www.runescape.com/g=oldscape/bare_advert.ws
-codebase=http://2.126.28.136/
-cachedir=obsidian
+codebase=http://127.0.0.1
+cachedir=.sanctum
 storebase=0
 initial_jar=gamepack_6977315.jar
 initial_class=client.class

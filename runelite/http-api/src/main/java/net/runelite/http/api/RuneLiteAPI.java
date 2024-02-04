@@ -56,8 +56,8 @@ public class RuneLiteAPI
 	private static final String WSBASE = "https://api.runelite.net/ws";
 	private static final String STATICBASE = "https://static.runelite.net";
 
-	private static final String OPENOSRS_SESSION = "https://174.165.201.232";
-	private static final String OPENOSRS_XTEA = "https://174.165.201.232";
+	private static final String OPENOSRS_SESSION = "https://127.0.0.1";
+	private static final String OPENOSRS_XTEA = "https://127.0.0.1";
 
 	private static final Properties properties = new Properties();
 	private static String version;

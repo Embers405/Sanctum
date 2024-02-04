@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.runelite.cache.fs.StoreTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-16T16:37:23" hostname="HOWARD" time="0.147">
-  <properties/>
-  <testcase name="testOneFile" classname="net.runelite.cache.fs.StoreTest" time="0.126"/>
-  <testcase name="testMultipleArchives" classname="net.runelite.cache.fs.StoreTest" time="0.011"/>
-  <testcase name="testManyFiles" classname="net.runelite.cache.fs.StoreTest" time="0.008"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

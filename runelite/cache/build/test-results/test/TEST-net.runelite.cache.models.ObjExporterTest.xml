@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.runelite.cache.models.ObjExporterTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-11-16T16:37:26" hostname="HOWARD" time="0.0">
-  <properties/>
-  <testcase name="testExport" classname="net.runelite.cache.models.ObjExporterTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
