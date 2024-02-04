@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/central" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/update" />
+            <option value="$PROJECT_DIR$/world" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/runelite" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/runelite" />
+            <option value="$PROJECT_DIR$/runelite/buildSrc" />
+            <option value="$PROJECT_DIR$/runelite/cache" />
+            <option value="$PROJECT_DIR$/runelite/deobfuscator" />
+            <option value="$PROJECT_DIR$/runelite/http-api" />
+            <option value="$PROJECT_DIR$/runelite/injection-annotations" />
+            <option value="$PROJECT_DIR$/runelite/injector" />
+            <option value="$PROJECT_DIR$/runelite/runelite-api" />
+            <option value="$PROJECT_DIR$/runelite/runelite-client" />
+            <option value="$PROJECT_DIR$/runelite/runelite-jshell" />
+            <option value="$PROJECT_DIR$/runelite/runelite-mixins" />
+            <option value="$PROJECT_DIR$/runelite/runelite-script-assembler-plugin" />
+            <option value="$PROJECT_DIR$/runelite/runescape-api" />
+            <option value="$PROJECT_DIR$/runelite/runescape-client" />
+            <option value="$PROJECT_DIR$/runelite/wiki-scraper" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

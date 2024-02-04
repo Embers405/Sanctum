@@ -184,7 +184,7 @@ public class Server extends ServerWrapper {
 
 
 
-        GIMRepository.load();
+        //GIMRepository.load();
 
         Achievement.staticInit();
 

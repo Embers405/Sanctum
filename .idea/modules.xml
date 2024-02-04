@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/central/drako.central.main.iml" filepath="$PROJECT_DIR$/.idea/modules/central/drako.central.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" filepath="$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/world/drako.world.main.iml" filepath="$PROJECT_DIR$/.idea/modules/world/drako.world.main.iml" />
+    </modules>
+  </component>
+</project>
