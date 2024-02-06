@@ -1,5 +1,6 @@
 package io.ruin.model.map.object.actions.impl;
 
+import io.ruin.cache.InterfaceDef;
 import io.ruin.model.World;
 import io.ruin.model.entity.player.Player;
 import io.ruin.model.entity.shared.LockType;
@@ -170,9 +171,12 @@ public enum CanoeStation {
         });
     }
 
-    private static void station(Player player, GameObject obj, CanoeStation canoeStation) {
+    private static void station(Player player, GameObject obj, CanoeStation canoeStation, int interfaceId, int childId) {
         if (canoeStation.config.get(player) == BEGINNING_STATE) {
             player.startEvent(event -> {
+                if (InterfaceDef.valid(interfaceId, childId)){
+                    player.getPacketSender().setHidden(interfaceId, childId, true);
+                }
                 Position chopPosition = new Position(obj.x + canoeStation.chopPosition.getX(), obj.y + canoeStation.chopPosition.getY(), 0);
                 player.lock();
                 if (!player.isAt(chopPosition)) {
@@ -214,12 +218,12 @@ public enum CanoeStation {
                 player.face(obj.x + canoeStation.faceBoatPosition.getX(), obj.y + canoeStation.faceBoatPosition.getY());
                 event.delay(1);
                 player.getPacketSender().sendClientScript(2524, "Ii", 3612928, 0);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 6, false);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 32, true);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 3, false);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 35, true);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 13, false);
-//                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 29, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 6, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 32, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 3, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 35, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 13, true);
+                player.getPacketSender().setHidden(Interface.CANOE_SELECTION, 29, true);
                 player.openInterface(InterfaceType.MAIN, Interface.CANOE_SELECTION);
                 player.getPacketSender().sendClientScript(2524, "ii", -1, -1);
                 player.unlock();
@@ -291,5 +295,8 @@ public enum CanoeStation {
              */
             h.actions[11] = (SimpleAction) p -> shapeBoat(p, 4);
         });
+    }
+
+    private static void station(Player player, GameObject obj, CanoeStation canoeStation) {
     }
 }

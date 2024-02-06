@@ -5,6 +5,5 @@ include(
 	
 	"update",
 	"central",
-	"world",
-	"world_2"
+	"world"
 )

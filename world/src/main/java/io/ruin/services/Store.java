@@ -36,10 +36,10 @@ import static io.ruin.model.entity.player.SecondaryGroup.getGroup;
 public class Store implements Runnable{
 
 
-    public static final String HOST = "185.2.168.125"; // website ip address
-    public static final String USER = "obsidia1_juice";
-    public static final String PASS = "kresls112!";
-    public static final String DATABASE = "obsidia1_store";
+    public static final String HOST = "23.254.130.200"; // website ip address
+    public static final String USER = "dpljyktb_Sanctum";
+    public static final String PASS = "WwHh12!!@@";
+    public static final String DATABASE = "dpljyktb_store";
 
     private Player player;
     private Connection conn;
@@ -63,52 +63,52 @@ public class Store implements Runnable{
             String name = player.getName().replace("_", " ");
             ResultSet rs = executeQuery("SELECT * FROM payments WHERE player_name='"+name+"' AND status='Completed' AND claimed=0");
 
+            if (!rs.isBeforeFirst()) { // Check if ResultSet is empty
+                player.sendMessage("No donations waiting.");
+                destroy(); // Close connection and cleanup
+                return;
+            }
+
             while (rs.next()) {
                 int item_number = rs.getInt("item_number");
                 int quantity = rs.getInt("quantity");
-                int paid = rs.getInt("paid");
+                int paid = rs.getInt("amount");
                 switch (item_number) {// add products according to their ID in the ACP
-                    case 1065: // 10 bond
+                    case 18: // 10 bond
                         player.getInventory().add(30250, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 10$ Bond!");
                         break;
-                    case 1066: // 25 bond
+                    case 19: // 25 bond
                         player.getInventory().add(30249, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 25$ Bond!");
                         break;
-                    case 1067: // 50 bond
+                    case 20: // 50 bond
                         player.getInventory().add(30251, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 50$ Bond!");
                         break;
-                    case 1068: // 100 bond
+                    case 21: // 100 bond
                         player.getInventory().add(30252, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 100$ Bond!");
                         break;
-                    case 1069: // 250 bond
+                    case 22: // 250 bond
                         player.getInventory().add(30253, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 250$ Bond!");
                         break;
-                    case 1070: // 500 bond
+                    case 23: // 500 bond
                         player.getInventory().add(30254, quantity);
                         player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased " + quantity + "x 500$ Bond!");
                         break;
-                    case 1075: // Battle Pass
+                    case 24: // Battle Pass
                         player.getInventory().add(757, 1);
                         player.sendMessage("Thank you for donating, Your Battle Pass has been activated!");
                         Broadcast.WORLD.sendNews("[News]" + player.getName() + " has purchased The Battle Pass!");
                         player.storeAmountSpent += 75;
-                        break;
-                    case 1078: // Battle Pass
-                        player.getInventory().add(30306, quantity);
-                        player.sendMessage("Thank you for donating, Your items have been placed in your Inventory");
-                        Broadcast.WORLD.sendNews("[News]" + player.getName() + " has just brought " + ItemDef.get(30306).name + " x " + quantity);
-                        player.storeAmountSpent += 10;
                         break;
                 }
                 if (paid >= 100) {

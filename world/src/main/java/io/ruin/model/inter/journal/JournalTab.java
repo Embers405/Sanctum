@@ -19,6 +19,7 @@ import io.ruin.model.inter.journal.toggles.*;
 import io.ruin.model.inter.utils.Config;
 import io.ruin.model.item.containers.collectionlog.CollectionLogInfo;
 import lombok.Getter;
+import io.ruin.model.entity.player.XpMode;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -136,7 +137,7 @@ public class JournalTab {
         XP_MODE(Tab.QUEST, t1++, player -> "Mode: " + Color.GREEN.wrap(player.getGameMode().toString())),
         XP_BONUS(Tab.QUEST, t1++, player -> "Your CombatXP Bonus: " + Color.GREEN.wrap(player.xpMode.getCombatRate() + "X")),
         SKILL_XP_BONUS(Tab.QUEST, t1++, player -> "Your SkillXP Bonus: " + Color.GREEN.wrap(player.xpMode.getSkillRate() + "X")),
-        //PLAYTIME(Tab.QUEST, t1++, player -> "Time Played: " + Color.GREEN.wrap(TimeUtils.fromMs(player.playTime * Server.tickMs(), false))),
+        PLAYTIME(Tab.QUEST, t1++, player -> "Time Played: " + Color.GREEN.wrap(TimeUtils.fromMs(player.playTime * Server.tickMs(), false))),
         KDR(Tab.QUEST, t1++, player -> "KDR: " + Color.GREEN.wrap(getKdr(player))),
         CREDITS(Tab.QUEST, t1++, player -> "PVM Points: " + Color.GREEN.wrap(Integer.toString(player.PvmPoints))),
         AFK_Points(Tab.QUEST, t1++, player -> "AFK Points: " + Color.GREEN.wrap(Integer.toString(player.afkPoints))),
@@ -151,7 +152,7 @@ public class JournalTab {
         WELL(Tab.QUEST, t1++, player -> "Well Status: " + WellChecker()),
         PLAYERS_DUEL(Tab.QUEST, t1++, player -> "Duel Arena: " + Color.GREEN.wrap(String.valueOf(Duel.players.size())) + " players."),
         PLAYERS_TOURNY(Tab.QUEST, t1++, player -> "Tournament: " + Color.GREEN.wrap(String.valueOf(PVPInstance.players.size())) + " players."),
-        XP_BOOST(Tab.QUEST, t1++, player -> "XP Bonus: " + Color.GREEN.wrap(World.xpMultiplier >= 2 ? Color.GREEN.wrap("Enabled") : Color.RED.wrap("Disabled"))),
+        //XP_BOOST(Tab.QUEST, t1++, player -> "XP Bonus: " + Color.GREEN.wrap(World.xpMultiplier >= 2 ? Color.GREEN.wrap("Enabled") : Color.RED.wrap("Disabled"))),
 
 
 //        SLAYER_BONUS(Tab.QUEST, t1++, player -> "Slayer Bonus: " + Color.GREEN.wrap(Misc.stateOf(WellOfGoodwill.isDoubleSlayer()))),

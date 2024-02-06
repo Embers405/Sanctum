@@ -52,8 +52,8 @@ public class RuneLiteAPI
 	public static final MediaType JSON = MediaType.parse("application/json");
 	public static String userAgent;
 
-	private static final String BASE = "https://api.runelite.net";
-	private static final String WSBASE = "https://api.runelite.net/ws";
+	private static final String BASE = "https://sanctum.rip/game";
+	private static final String WSBASE = "https://sanctum.rip/game";
 	private static final String STATICBASE = "https://static.runelite.net";
 
 	private static final String OPENOSRS_SESSION = "https://174.165.201.232";

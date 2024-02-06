@@ -10,6 +10,7 @@ import io.ruin.model.activities.bosses.nightmare.NightmareCombat;
 import io.ruin.model.activities.bosses.worldboss.AvatarOfCreation;
 import io.ruin.model.activities.bosses.worldboss.AvatarOfDestruction;
 import io.ruin.model.entity.player.Player;
+import io.ruin.model.entity.player.XpMode;
 import io.ruin.model.inter.Interface;
 import io.ruin.model.inter.InterfaceHandler;
 import io.ruin.model.inter.InterfaceType;
@@ -205,18 +206,25 @@ public class Bestiary {
                     } else {
                         for (LootItem item : table.items) {
                             int chance;
-                            /*if (player.xpMode == XpMode.HARD) {
+                            if (player.xpMode == XpMode.ZEZIMA) {
                                 if (item.weight == 0)
-                                    chance = (int) ((1D / tableChance) * .9);
+                                    chance = (int) ((1D / tableChance) * .9 * 0.75);
                                 else
-                                    chance = (int) ((1D / (tableChance * (item.weight / table.totalWeight))) * .9);
-                            } else {*/
-                            if (item.weight == 0)
-                                chance = (int) (1D / tableChance);
-                            else
-                                chance = (int) (1D / (tableChance * (item.weight / table.totalWeight)));
-                            //  }
-                            drops.add(new DropTableResult(item.id, item.min, item.max, chance, table.rollChance));
+                                    chance = (int) ((1D / (tableChance * (item.weight / table.totalWeight))) * .9 * 0.75);
+                            } else {
+                                if (player.xpMode == XpMode.ELITE) {
+                                    if (item.weight == 0)
+                                        chance = (int) ((1D / tableChance) * .9 * 0.95);
+                                    else
+                                        chance = (int) ((1D / (tableChance * (item.weight / table.totalWeight))) * .9 * 0.95);
+                                } else {
+                                    if (item.weight == 0)
+                                        chance = (int) (1D / tableChance);
+                                    else
+                                        chance = (int) (1D / (tableChance * (item.weight / table.totalWeight)));
+                                }
+                                drops.add(new DropTableResult(item.id, item.min, item.max, chance, table.rollChance));
+                            }
                         }
                     }
                 }
@@ -269,23 +277,25 @@ public class Bestiary {
                     } else {
                         for (LootItem item : table.items) {
                             int chance;
-                            /*if (player.xpMode == XpMode.HARD) {
+                            if (player.xpMode == XpMode.ZEZIMA) {
                                 if (item.weight == 0)
-                                    chance = (int) ((1D / tableChance) * .9);
+                                    chance = (int) ((1D / tableChance) * .9 * 0.75);
                                 else
-                                    chance = (int) ((1D / (tableChance * (item.weight / table.totalWeight))) * .9);
-                            } else {*/
-                            if (item.weight == 0)
-                                chance = (int) (1D / tableChance);
-                            else
-                                chance = (int) (1D / (tableChance * (item.weight / table.totalWeight)));
-                            // }
-                            drops.add(new DropTableResult(item.id, item.min, item.max, chance, table.rollChance));
+                                    chance = (int) ((1D / (tableChance * (item.weight / table.totalWeight))) * .9 * 0.75);
+                            } else {
+                                    if (item.weight == 0)
+                                        chance = (int) (1D / tableChance);
+                                    else
+                                        chance = (int) (1D / (tableChance * (item.weight / table.totalWeight)));
+                                }
+                                drops.add(new DropTableResult(item.id, item.min, item.max, chance, table.rollChance));
+                            }
                         }
                     }
-                }
+
             }
         }
+
 
         if (!drops.isEmpty()) {
             showInfo(player, id, name);

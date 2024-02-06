@@ -26,11 +26,11 @@ public class HouseAdvertisement {
 
         player.getPacketSender().sendClientScript(2524, "ii", -1, -1);
 
-        /*player.getPacketSender().sendClientScript(3110, "isii",
+        player.getPacketSender().sendClientScript(3110, "isii",
                 1, player.getName() +
                         "|1|"
                         + player.getStats().get(StatType.Construction).currentLevel
-                        +"|Y|3|3|5|4|Y|27277678|", 1, 10);*/
+                        +"|Y|3|3|5|4|Y|27277678|", 1, 10);
 
         player.getPacketSender().sendClientScript(3110, "isii", 1, "", 1, 0);
 

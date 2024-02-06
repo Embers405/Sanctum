@@ -72,8 +72,8 @@ public class Hiscores {
         resultSet.updateString("username", player.getName());
         resultSet.updateInt("rights", player.isStaff() ? player.getPrimaryGroup().id : player.getSecondaryGroup().id);
         resultSet.updateInt("mode", !player.getGameMode().isIronMan() ? 0 : (player.getGameMode().groupId+1));
-        resultSet.updateInt("combatrate", player.xpMode.getCombatRate());
-        resultSet.updateInt("skillrate", player.xpMode.getSkillRate());
+      //  resultSet.updateInt("combatrate", player.xpMode.getCombatRate());
+       // resultSet.updateInt("skillrate", player.xpMode.getSkillRate());
         resultSet.updateInt("total_level", player.getStats().totalLevel);
         resultSet.updateInt("overall_xp", (int) player.getStats().totalXp);
         resultSet.updateInt("attack_xp", (int) player.getStats().get(StatType.Attack).experience);

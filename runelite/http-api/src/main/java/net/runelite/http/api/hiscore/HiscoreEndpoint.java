@@ -32,8 +32,8 @@ import okhttp3.HttpUrl;
 @Getter
 public enum HiscoreEndpoint
 {
-	NORMAL("Normal", "https://services.runescape.com/m=hiscore_oldschool/index_lite.ws"),
-	IRONMAN("Ironman", "https://services.runescape.com/m=hiscore_oldschool_ironman/index_lite.ws"),
+	NORMAL("Normal", "https://sanctum.rip/highscores/index_lite.ws"),
+	IRONMAN("Ironman", "https://sanctum.rip/highscores/index_lite.ws"),
 	HARDCORE_IRONMAN("Hardcore Ironman", "https://services.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.ws"),
 	ULTIMATE_IRONMAN("Ultimate Ironman", "https://services.runescape.com/m=hiscore_oldschool_ultimate/index_lite.ws"),
 	DEADMAN("Deadman", "https://services.runescape.com/m=hiscore_oldschool_deadman/index_lite.ws"),

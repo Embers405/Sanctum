@@ -253,7 +253,7 @@ public class WellofGoodwill {
     }
 
     static {
-        NPCAction.register(14750,2,(player, npc) -> {
+        /*NPCAction.register(14750,2,(player, npc) -> {
             if (checkFull(player))
                 return;
 
@@ -268,11 +268,11 @@ public class WellofGoodwill {
             h.actions[17]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_WINTERTODT.name()), amt -> donate(p, amt, Perks.DOUBLE_WINTERTODT.name()));
             h.actions[18]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_PEST_CONTROL.name()), amt -> donate(p, amt, Perks.DOUBLE_PEST_CONTROL.name()));
             h.actions[19]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_DROPS.name()), amt -> donate(p, amt, Perks.DOUBLE_DROPS.name()));
-        });
+        });*/
 
-/*        ItemObjectAction.register(31625,(player, item, obj) -> {
+        ItemObjectAction.register(31625,(player, item, obj) -> {
             if (item.getId() == 995) {
-//                player.openInterface(InterfaceType.CHATBOX, 1017);
+                player.openInterface(InterfaceType.CHATBOX, 1017);
                 if (checkFull(player)) {
                     return;
                 }
@@ -283,6 +283,6 @@ public class WellofGoodwill {
                     player.integerInput("How much would you like to donate towards " + capitalize(perkName), amt -> donate(player, amt, perkName));
                 }
             }
-        });*/
+        });
     }
 }

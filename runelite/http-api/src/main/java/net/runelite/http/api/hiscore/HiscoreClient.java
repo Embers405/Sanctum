@@ -149,6 +149,10 @@ public class HiscoreClient
 		}
 
 		String responseStr = response.body().string();
+		if (responseStr.startsWith("<!DOCTYPE html>")) {
+			throw new IOException("Unexpected response from the server. Expected CSV data, but got "
+					+ "a HTML document.");
+		}
 		return parseResponse(username, responseStr);
 	}
 

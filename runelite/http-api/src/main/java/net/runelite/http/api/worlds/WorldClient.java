@@ -50,21 +50,20 @@ public class WorldClient
 			.addPathSegment("worlds.ws")
 			.build();
 
-		log.debug("Built URI: {}", url);
-
+		System.out.println("Built URI: " + url);
+		//log.debug("Built URI: {}", url);
 		Request request = new Request.Builder()
 			.url(url)
 			.build();
 
-		try (Response response = client.newCall(request).execute())
-		{
+		try (Response response = client.newCall(request).execute();
+			 InputStream in = response.body().byteStream()) {
+
 			if (!response.isSuccessful())
 			{
 				log.debug("Error looking up worlds: {}", response);
 				throw new IOException("unsuccessful response looking up worlds");
 			}
-
-			InputStream in = response.body().byteStream();
 			return RuneLiteAPI.GSON.fromJson(new InputStreamReader(in, StandardCharsets.UTF_8), WorldResult.class);
 		}
 		catch (JsonParseException ex)

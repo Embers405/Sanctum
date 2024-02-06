@@ -40,6 +40,7 @@ public class Stairs {
         ObjectAction.register(11799, 1615,3665,1, DOWN, ((player, obj) -> player.getMovement().teleport(1618, 3666,0)));
 
 
+
         for (int spiralStairId : SPIRAL_STAIR_IDS) {
             ObjectAction.register(spiralStairId, "Climb-up", Stairs::climbUpSpiral);
             ObjectAction.register(spiralStairId, "Climb-down", Stairs::climbDownSpiral);

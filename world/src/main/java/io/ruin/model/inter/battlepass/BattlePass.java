@@ -52,6 +52,7 @@ public class BattlePass {
     }
 
     public static void initLevels(Player player) {
+        //page 1
         player.levels.add(new Level(1, 537, 25,0));				// Dragon bones
         player.levels.add(new Level(2, 224, 100,0));			// Red Spider Eggs
         player.levels.add(new Level(3, 995, 1000000,0));		// Coins
@@ -60,6 +61,7 @@ public class BattlePass {
         player.levels.add(new Level(6, 12696, 15,0));			// Super Combat Potion
         player.levels.add(new Level(7, 9342, 250,0));			// Onyx Bolts
         player.levels.add(new Level(8, 290, 1,0));				// Luxury Box
+        //page 2
         player.levels.add(new Level(9, 30248, 1,0));			// $5 bond
         player.levels.add(new Level(10, 20360, 5,0));			// Medium Clues
         player.levels.add(new Level(11, 6831, 25,0));			// Slayer Box
@@ -68,6 +70,7 @@ public class BattlePass {
         player.levels.add(new Level(14, 565, 3000,0));			// Blood rune
         player.levels.add(new Level(15, 555, 20000,0));			// Water rune
         player.levels.add(new Level(16, 30306, 1,0));			// Seasonal Box
+        //page 3
         player.levels.add(new Level(17, 30250, 1,0));			// $10 bond
         player.levels.add(new Level(18, 30290, 5,0));			// PvP Box
         player.levels.add(new Level(19, 995, 150000,0));		// Coins
@@ -76,6 +79,7 @@ public class BattlePass {
         player.levels.add(new Level(22, 452, 50,0));			// Runite ore
         player.levels.add(new Level(23, 30256, 10,0));			// Vote multipass
         player.levels.add(new Level(24, 7937, 1500,0));			// Pure Essence
+        //page 4
         player.levels.add(new Level(25, 290, 1,0));				// Luxury Box
         player.levels.add(new Level(26, 11232, 1500,0));		// Dragon dart tip
         player.levels.add(new Level(27, 30250, 1,0));			// $10 bond
@@ -84,6 +88,7 @@ public class BattlePass {
         player.levels.add(new Level(30, 1632, 100,0));			// Uncut DragonStone
         player.levels.add(new Level(31, 30306, 2,0));			// Seasonal Box
         player.levels.add(new Level(32, 12945, 10,0));			// Magic Sappling
+        //page 5
         player.levels.add(new Level(33, 2364, 300,0));			// Runite Bar
         player.levels.add(new Level(34, 30256, 3,0));			// Vote multipass
         player.levels.add(new Level(35, 995, 2000000,0));		// Coins
@@ -92,6 +97,7 @@ public class BattlePass {
         player.levels.add(new Level(38, 6829, 3,0));			// Vote Box
         player.levels.add(new Level(39, 6199, 1,0));			// Mystery Box
         player.levels.add(new Level(40, 22125, 50,0));			// Superior dragon bone
+        //page 6
         player.levels.add(new Level(41, 13440, 300,0));			// Angler Fish
         player.levels.add(new Level(42, 30256, 6,0));			// Vote multipass
         player.levels.add(new Level(43, 20360, 20,0));			// Medium clue
@@ -100,6 +106,7 @@ public class BattlePass {
         player.levels.add(new Level(46, 555, 20000,0));			// Water rune
         player.levels.add(new Level(47, 30248, 1,0));			// $5 bond
         player.levels.add(new Level(48, 30250, 1,0));			// $10 bond
+        //page 7
         player.levels.add(new Level(49, 1514, 300,0));			// Magic logs
         player.levels.add(new Level(50, 30306, 3,0));			// Seasonal Box
         player.levels.add(new Level(51, 25527, 1000,0));		// Stardust
@@ -107,7 +114,7 @@ public class BattlePass {
         player.levels.add(new Level(53, 30256, 10,0));			// Vote multipass
         player.levels.add(new Level(54, 11232, 1000,0));		// Dragon dart tip
         player.levels.add(new Level(55, 995, 5000000,0));		// Coins
-        player.levels.add(new Level(56, 6828, 1,0));
+        player.levels.add(new Level(56, 6828, 1,0));        //mega box
     }
 
     public List<Level> getLevels(Player player) {
@@ -206,7 +213,7 @@ public class BattlePass {
                 for (int i = 0; i < nrOf; i++) {
                     player.sendMessage("Reward added: " + reward[i].getId());
                     player.getBank().add(reward[i].getId(), reward[i].getAmount());
-                    player.sendMessage(Color.COOL_BLUE.tag() + "You have claimed the ObsidianPass reward " + reward[i].getDef().name + " for reaching level " + level+"!");
+                    player.sendMessage(Color.COOL_BLUE.tag() + "You have claimed the Sanctum Pass reward " + reward[i].getDef().name + " for reaching level " + level+"!");
                 }
                 player.takenRewards.set(level, true);
             }

@@ -56,13 +56,11 @@ public class TabLogout {
         }
 
         public static void open(Player player) {
-           if (true) {
-               player.sendMessage("Error sending request to world server.");
-           } else {
-               player.openInterface(InterfaceType.INVENTORY_OVERLAY, Interface.WORLD_SWITCHER);
-               new Unlock(Interface.WORLD_SWITCHER, 14).children(0, 420).unlockWith(player, 6);
-           }
+            System.out.println("Attempting to open World Switcher for player: " + player.getName()); // Add player identifier as appropriate
+            player.openInterface(InterfaceType.INVENTORY_OVERLAY, Interface.WORLD_SWITCHER);
+            new Unlock(Interface.WORLD_SWITCHER, 14).children(0, 420).unlockWith(player, 6);
         }
+
 
         private static void toggleSettings(Player p, int set, int elseSet) {
             if (Config.WORLD_SWITCHER_SETTINGS.get(p) == set)
