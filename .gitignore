@@ -15895,3 +15895,7 @@ runelite/wiki-scraper/build/test-results/test/binary/results.bin
 runelite/wiki-scraper/build/tmp/compileJava/previous-compilation-data.bin
 runelite/wiki-scraper/build/tmp/compileTestJava/previous-compilation-data.bin
 runelite/wiki-scraper/build/tmp/jar/MANIFEST.MF
+runelite/.gradle/7.2/fileHashes/fileHashes.lock
+*.lock
+runelite/buildSrc/.gradle/7.2/executionHistory/executionHistory.lock
+runelite/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock
