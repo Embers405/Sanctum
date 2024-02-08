@@ -3,11 +3,11 @@ package io.ruin.api.protocol.world;
 public enum WorldType {
     //ECO("Sanctum", "https://sanctum.rip/", "73.130.50.93"),
 
-    ECO("Sanctum", "https://174.165.201.232", "174.165.201.232", "174.165.201.232"),
+    ECO("Sanctum", "https://127.0.0.1", "127.0.0.1", "127.0.0.1"),
     BETA("Drako BETA", "https://drakops.com", "73.130.50.93", "73.130.50.93"),
     PVP("DrakoPK", "https://drakops.com", "73.130.50.93", "73.130.50.93"),
     DEADMAN("DrakoDMM", "https://drakops.com", "73.130.50.93", "73.130.50.93"),
-    DEV("Development", "https://174.165.201.232", "73.130.50.93", "73.130.50.93");
+    DEV("Development", "https://127.0.0.1", "127.0.0.1", "127.0.0.1");
 
     WorldType(String worldName, String websiteUrl, String gameServerAddress, String fileServerAddress) {
         this.worldName = worldName;

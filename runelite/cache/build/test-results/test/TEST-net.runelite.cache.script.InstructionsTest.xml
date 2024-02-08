@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.runelite.cache.script.InstructionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-16T16:37:34" hostname="HOWARD" time="0.0">
-  <properties/>
-  <testcase name="testInit" classname="net.runelite.cache.script.InstructionsTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
