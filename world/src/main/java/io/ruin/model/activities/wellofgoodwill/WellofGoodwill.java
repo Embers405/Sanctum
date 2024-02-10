@@ -37,7 +37,7 @@ public class WellofGoodwill {
     public static WellState STATE = WellState.INACTIVE;
     private static long START_TIMER = 0;
     private static int MONEY_IN_WELL = 0;
-    private static String perkName = "Null";
+    private static String perkName = null;
 
     static {
         load();
@@ -65,16 +65,16 @@ public class WellofGoodwill {
                     long timeLeft = Long.parseLong(line);//7200000
                     if (timeLeft > 0) {
                         STATE = WellState.ACTIVE;
-                        if (perkName.equalsIgnoreCase("double_xp")) {
+                        if (perkName.equalsIgnoreCase("DOUBLE_XP")) {
                             World.boostXp(2);
-                        } else if (perkName.equalsIgnoreCase("DOUBLE_DROPS")) {
-                            World.doubleDrops = true;
                         } else if (perkName.equalsIgnoreCase("DOUBLE_SLAYER")) {
                             World.doubleSlayer = true;
                         } else if (perkName.equalsIgnoreCase("DOUBLE_WINTERTODT")) {
                             World.doubleWintertodt = true;
                         } else if (perkName.equalsIgnoreCase("DOUBLE_PEST_CONTROL")) {
                             World.doublePest = true;
+                        } else if (perkName.equalsIgnoreCase("DOUBLE_DROPS")) {
+                            World.doubleDrops = true;
                         }
                         START_TIMER = System.currentTimeMillis() - (TimeUnit.MINUTES.toMillis(BONUS_DURATION) - timeLeft);
                         MONEY_IN_WELL = AMOUNT_NEEDED;
@@ -96,6 +96,7 @@ public class WellofGoodwill {
             out.close();
 
             BufferedWriter perk = new BufferedWriter(new FileWriter(HomeFiles.get("perk.cfg")));
+
             String perktoSave = perkName;
             perk.write(perktoSave);
             perk.close();
@@ -104,6 +105,23 @@ public class WellofGoodwill {
         }
     }
 
+
+    public static void save(String pName) {
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(HomeFiles.get("well.cfg")));
+            String toSave = isActive() ? TimeUnit.MINUTES.toMillis(getMinutesRemaining()) + "" : "GP" + (AMOUNT_NEEDED - getMissingAmount());
+            out.write(toSave);
+            out.close();
+
+            BufferedWriter perk = new BufferedWriter(new FileWriter(HomeFiles.get("perk.cfg")));
+
+            String perktoSave = pName;
+            perk.write(perktoSave);
+            perk.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public static void lookDownWell(Player player) {
         if (checkFull(player)) {
             return;
@@ -120,9 +138,9 @@ public class WellofGoodwill {
     }
 
     public static void donate(Player player, int amount, String perk) {
-        if (perkName.equalsIgnoreCase("null")) {
+        if (perkName == null || perkName.isEmpty()) {
             perkName = perk;
-            AMOUNT_NEEDED = Perks.valueOf(perk).cost;
+            AMOUNT_NEEDED = amount;
         }
         if (checkFull(player)) {
             return;
@@ -152,16 +170,16 @@ public class WellofGoodwill {
         if (getMissingAmount() <= 0) {
             STATE = WellState.ACTIVE;
             START_TIMER = System.currentTimeMillis();
-            if (perkName.equalsIgnoreCase("double_xp")) {
+            if (perkName.equalsIgnoreCase("DOUBLE_XP")) {
                 World.boostXp(2);
-            } else if (perkName.equalsIgnoreCase("DOUBLE_DROPS")) {
-                World.doubleDrops = true;
             } else if (perkName.equalsIgnoreCase("DOUBLE_SLAYER")) {
                 World.doubleSlayer = true;
             } else if (perkName.equalsIgnoreCase("DOUBLE_WINTERTODT")) {
                 World.doubleWintertodt = true;
             } else if (perkName.equalsIgnoreCase("DOUBLE_PEST_CONTROL")) {
                 World.doublePest = true;
+            } else if (perkName.equalsIgnoreCase("DOUBLE_DROPS")) {
+                World.doubleDrops = true;
             }
             EmbedBuilder eb = new EmbedBuilder();
             eb.setTitle("The Fountain Of Uhld Has Been Filled!");
@@ -170,8 +188,8 @@ public class WellofGoodwill {
             eb.setColor(new java.awt.Color(0xB00D03));
             eb.addField("Notification!", "<@&984907864005050399>", true);
             eb.addField("Notification!", "<@&984907864005050399>", true);
-            DiscordConnection.jda.getTextChannelById("984906544929984512").sendMessageEmbeds(eb.build()).queue();
-            Guild guild = DiscordConnection.jda.getGuildById("984903419573706773"); //Guild you got from a listener, or from the JDA pool
+//            DiscordConnection.jda.getTextChannelById("984906544929984512").sendMessageEmbeds(eb.build()).queue();
+//            Guild guild = DiscordConnection.jda.getGuildById("984903419573706773"); //Guild you got from a listener, or from the JDA pool
 
 
             Broadcast.WORLD.sendNews(Icon.BLUE_INFO_BADGE, "Fountain Of Uhld: ", "The Fountain Of Uhld has been activated!");
@@ -183,7 +201,8 @@ public class WellofGoodwill {
         } else {
             player.sendMessage("The Well stills needs " + getMissingAmount() + "GP, to activate!");
         }
-        save();
+        save(perk);
+        load();
     }
 
     public static String capitalize(String s) {
@@ -214,8 +233,8 @@ public class WellofGoodwill {
                 eb.setColor(new java.awt.Color(0xB00D03));
                 eb.addField("Notification!", "<@&984907864005050399>", true);
                 eb.addField("Notification!", "<@&984907864005050399>", true);
-                DiscordConnection.jda.getTextChannelById("984906544929984512").sendMessageEmbeds(eb.build()).queue();
-                Guild guild = DiscordConnection.jda.getGuildById("984903419573706773");
+//                DiscordConnection.jda.getTextChannelById("984906544929984512").sendMessageEmbeds(eb.build()).queue();
+//                Guild guild = DiscordConnection.jda.getGuildById("984903419573706773");
             }
         }
     }
@@ -253,36 +272,29 @@ public class WellofGoodwill {
     }
 
     static {
-        /*NPCAction.register(14750,2,(player, npc) -> {
+
+       NPCAction.register(14750,2,(player, npc) -> {
             if (checkFull(player))
                 return;
 
             player.openInterface(InterfaceType.CHATBOX, 1017);
             player.getPacketSender().sendString(1017,13,"Amount Paid (" + Misc.currency(MONEY_IN_WELL) + "/" + Misc.currency(AMOUNT_NEEDED) + ")"); // current amount
-            player.getPacketSender().sendString(1017,14,"Current Perk : " + (perkName.equalsIgnoreCase("null") ? capitalize("None") : capitalize(perkName))); // current chosen perk
+           if(perkName == null) {
+               player.getPacketSender().sendString(1017,14,"Current Perk : None"); // current chosen perk
+
+           }else {
+               player.getPacketSender().sendString(1017, 14, "Current Perk : " + perkName.replace('_', ' ')); // current chosen perk
+           }
         });
 
         InterfaceHandler.register(1017, h -> {
-            h.actions[15]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_XP.name()), amt -> donate(p, amt, Perks.DOUBLE_XP.name()));
-            h.actions[16]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_SLAYER.name()), amt -> donate(p, amt, Perks.DOUBLE_SLAYER.name()));
-            h.actions[17]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_WINTERTODT.name()), amt -> donate(p, amt, Perks.DOUBLE_WINTERTODT.name()));
-            h.actions[18]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_PEST_CONTROL.name()), amt -> donate(p, amt, Perks.DOUBLE_PEST_CONTROL.name()));
-            h.actions[19]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards " + capitalize(Perks.DOUBLE_DROPS.name()), amt -> donate(p, amt, Perks.DOUBLE_DROPS.name()));
-        });*/
+            h.actions[15]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards Double XP", amt -> donate(p, 20000000, "DOUBLE_XP"));
+            h.actions[16]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards Double Slayer", amt -> donate(p, 15000000, "DOUBLE_SLAYER"));
+            h.actions[17]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards Double Wintertodt", amt -> donate(p, 15000000, "DOUBLE_WINTERTODT"));
+            h.actions[18]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards Double Pest Control", amt -> donate(p, 10000000, "DOUBLE_PEST_CONTROL"));
+            h.actions[19]  = (SimpleAction) p -> p.integerInput("How much would you like to donate towards Double Drops.", amt -> donate(p, 35000000, "DOUBLE_DROPS"));
 
-        ItemObjectAction.register(31625,(player, item, obj) -> {
-            if (item.getId() == 995) {
-                player.openInterface(InterfaceType.CHATBOX, 1017);
-                if (checkFull(player)) {
-                    return;
-                }
-                if (WellofGoodwill.perkName.equalsIgnoreCase("null")){
-                    OptionScroll.open(player, "Select a perk to donate towards.", true,
-                            Arrays.stream(Perks.values()).map(cd -> new Option(capitalize(cd.name()), () -> player.integerInput("How much would you like to donate towards" + capitalize(cd.name()), amt -> donate(player, amt, cd.name())))).collect(Collectors.toList()));
-                } else {
-                    player.integerInput("How much would you like to donate towards " + capitalize(perkName), amt -> donate(player, amt, perkName));
-                }
-            }
         });
+
     }
 }
