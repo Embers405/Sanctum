@@ -15901,3 +15901,5 @@ runelite/buildSrc/.gradle/7.2/executionHistory/executionHistory.lock
 runelite/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock
 *.bin
 /update/
+/runelite/
+/central/
