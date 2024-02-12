@@ -260,7 +260,7 @@ public class FishingSpot {
             return true;
 
         ItemDef playerWeapon = player.getEquipment().getDef(Equipment.SLOT_WEAPON);
-        if(playerWeapon != null && playerWeapon.id == FishingTool.DRAGON_HARPOON.id)
+        if(playerWeapon.id == FishingTool.DRAGON_HARPOON.id)
             return true;
 
         return false;

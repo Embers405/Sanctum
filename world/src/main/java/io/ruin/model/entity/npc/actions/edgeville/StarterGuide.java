@@ -28,6 +28,7 @@ import io.ruin.model.inter.utils.Option;
 import io.ruin.model.map.Direction;
 import io.ruin.model.stat.StatType;
 import io.ruin.network.central.CentralClient;
+import io.ruin.network.incoming.desktop.handlers.ClanHandler;
 import io.ruin.utility.Broadcast;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
