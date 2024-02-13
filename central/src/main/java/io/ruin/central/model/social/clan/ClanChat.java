@@ -160,7 +160,7 @@ public class ClanChat extends ClanContainer {
         if (this.active == null) {
             return;
         }
-        this.lastName = logout ? this.active.parent.username : "";
+        this.lastName = logout ? this.active.parent.username : "help";
         this.setActive(player, null);
     }
 

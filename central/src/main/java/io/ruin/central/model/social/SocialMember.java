@@ -10,17 +10,17 @@ public class SocialMember {
     @ Expose public String lastName;
     protected boolean newName;
     @ Expose public SocialRank rank;
-    public int worldId = -1;
+    public int worldId = 1;
 
     public SocialMember(String username, SocialRank rank) {
         this.name = username;
-        this.lastName = "";
+        this.lastName = "help";
         this.rank = rank;
     }
 
     public SocialMember(int userId, String name, int worldId) {
         this.name = name;
-        this.lastName = "";
+        this.lastName = "help";
         this.worldId = worldId;
     }
 

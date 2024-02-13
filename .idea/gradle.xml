@@ -18,10 +18,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/runelite" />
-<<<<<<< HEAD
-        <option name="gradleJvm" value="17 (2)" />
-=======
->>>>>>> 4796b299ea305dbf03aa2f75d4b91cc171d36e26
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/runelite" />

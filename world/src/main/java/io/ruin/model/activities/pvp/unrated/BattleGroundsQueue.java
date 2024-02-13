@@ -83,7 +83,7 @@ public class BattleGroundsQueue {
         players.clear();
     }
 
-    private static void updateOverlay() {
+    public static void updateOverlay() {
         if (lobbySize() >= MINIMUM_PARTY_SIZE) {
 
         }

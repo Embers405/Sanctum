@@ -1797,6 +1797,56 @@ public class Player extends PlayerAttributes {
         dupeWarden.update(this);
     }
 
+    public void updateRank1() {
+        if (storeAmountSpent <= 0) {
+            storeAmountSpent = 0;
+            getPacketSender().sendString(830, 297, "Current Rank: <col=27ae60>None");
+        }
+        if (storeAmountSpent >= 15 && storeAmountSpent < 50) {//SAPPHIRE
+            getPacketSender().sendString(830, 297, "Current Rank: <img=19> <col=2c51e2>Sapphire");
+        }
+        if (storeAmountSpent >= 50 && storeAmountSpent < 100) {//EMERALD
+            getPacketSender().sendString(830, 297, "Current Rank: <img=20> <col=27a127>Emerald");
+        }
+        if (storeAmountSpent >= 100 && storeAmountSpent < 250) {//RUBY
+            getPacketSender().sendString(830, 297, "Current Rank: <img=21> <col=bd0f0f>Ruby");
+        }
+        if (storeAmountSpent >= 250 && storeAmountSpent < 500) {//DIAMOND
+            getPacketSender().sendString(830, 297, "Current Rank: <img=22> <col=ffffff>Diamond");
+        }
+        if (storeAmountSpent >= 500 && storeAmountSpent < 1000) {//ONYX
+            getPacketSender().sendString(830, 297, "Current Rank: <img=24> <col=616060>Onyx");
+        }
+        if (storeAmountSpent >= 1000) {//ZENYTE
+            getPacketSender().sendString(830, 297, "Current Rank: <img=25> <col=e37e1a>Zenyte");
+        }
+    }
+
+    public void updateRank() {
+        if (storeAmountSpent <= 0) {
+            storeAmountSpent = 0;
+            getPacketSender().sendString(857, 204, "Rank: <col=0fd60f>Registered");
+        }
+        if (storeAmountSpent >= 15 && storeAmountSpent < 50) {//SAPPHIRE
+            getPacketSender().sendString(857, 204, "Rank: <img=19> <col=0fd60f>Sapphire Donator");
+        }
+        if (storeAmountSpent >= 50 && storeAmountSpent < 100) {//EMERALD
+            getPacketSender().sendString(857, 204, "Rank: <img=20> <col=0fd60f>Emerald Donator");
+        }
+        if (storeAmountSpent >= 100 && storeAmountSpent < 250) {//RUBY
+            getPacketSender().sendString(857, 204, "Rank: <img=21> <col=0fd60f>Ruby Donator");
+        }
+        if (storeAmountSpent >= 250 && storeAmountSpent < 500) {//DIAMOND
+            getPacketSender().sendString(857, 204, "Rank: <img=22> <col=0fd60f>Diamond Donator");
+        }
+        if (storeAmountSpent >= 500 && storeAmountSpent < 1000) {//ONYX
+            getPacketSender().sendString(857, 204, "Rank: <img=24> <col=0fd60f>Onyx Donator");
+        }
+        if (storeAmountSpent >= 1000) {//ZENYTE
+            getPacketSender().sendString(857, 204, "Rank: <img=25> <col=0fd60f>Zenyte Donator");
+        }
+    }
+
     /**
      * Tick
      */

@@ -37,19 +37,19 @@ public class Tempoross {
         return !startDelay.isDelayed();
     }
 
-    public static DynamicMap map;
+    //public static DynamicMap map;
 
-    private void initMap() {
+   /* private void initMap() {
         map = new DynamicMap().build(12078, 3);
-    }
+    }*/
 
     Tempoross(TemporossGameSettings settings) {
         this.settings = settings;
     }
 
     private NPC addNpc(int id, Position originalTile) {
-        NPC npc = new NPC(id).spawn(map.convertX(originalTile.getX()), map.convertY(originalTile.getY()), 0);
-        map.addNpc(npc);
+        NPC npc = new NPC(id).spawn(originalTile.getX(), originalTile.getY(), 0);
+        //addNpc(npc);
         return npc;
     }
 
@@ -92,7 +92,6 @@ public class Tempoross {
         //SpiritPool Attack ID 10571
     public void startTempoross() {
         World.startEvent(event -> {
-            CannonAttack();
             if (Tempoross.getId() == 10574 && Essence != 100) {
                 Essence += Random.get(1, 20);
                 System.out.println("[Tempoross Essence] + " + Essence);
@@ -119,53 +118,57 @@ public class Tempoross {
     }
 
     public static void CannonAttack() {
-        GameObject.forObj(41238,map.convertX(3040),map.convertY(2979),0, gameObject -> {
-            if (cannon1ammo > 0) {
+        if (cannon1ammo > 0) {
+            GameObject.forObj(41238, 3039, 2979, 0, gameObject -> {
                 World.startEvent(event -> {
                     gameObject.animate(8871);
+                    gameObject.graphics(1837);
                     cannon1ammo--;
+                    System.out.println("Cannon 1 ammo before firing: " + cannon1ammo);
                     event.delay(2);
                     Essence -= 2;
-                    System.out.println("[Tempoross Essense] - " + Essence);
+                    System.out.println("[Tempoross Essence] - " + Essence);
                 });
-            }
-        });
-        GameObject.forObj(41239,map.convertX(3040),map.convertY(2974),0, gameObject -> {
-            if (cannon2ammo > 0) {
+            });
+        }
+
+        if (cannon2ammo > 0) {
+            GameObject.forObj(41239, 3040, 2974, 0, gameObject -> {
                 World.startEvent(event -> {
                     gameObject.animate(8871);
                     cannon2ammo--;
                     event.delay(2);
                     Essence -= 2;
-                    System.out.println("[Tempoross Essense] - " + Essence);
+                    System.out.println("[Tempoross Essence] - " + Essence);
                 });
+            });
+        }
 
-            }
-        });
-        GameObject.forObj(41240,map.convertX(3054),map.convertY(2980),0, gameObject -> {
-            if (cannon3ammo > 0) {
+        if (cannon3ammo > 0) {
+            GameObject.forObj(41240, 3054, 2980, 0, gameObject -> {
                 World.startEvent(event -> {
                     gameObject.animate(8871);
                     cannon3ammo--;
                     event.delay(2);
                     Essence -= 2;
-                    System.out.println("[Tempoross Essense] - " + Essence);
+                    System.out.println("[Tempoross Essence] - " + Essence);
                 });
+            });
+        }
 
-            }
-        });
-        GameObject.forObj(41241,map.convertX(3054),map.convertY(2975),0, gameObject -> {
-            if (cannon4ammo > 0) {
+        if (cannon4ammo > 0) {
+            GameObject.forObj(41241, 3054, 2975, 0, gameObject -> {
                 World.startEvent(event -> {
                     gameObject.animate(8871);
                     cannon4ammo--;
                     event.delay(2);
                     Essence -= 2;
-                    System.out.println("[Tempoross Essense] - " + Essence);
+                    System.out.println("[Tempoross Essence] - " + Essence);
                 });
-            }
-        });
+            });
+        }
     }
+
 
     public static void HarpoonAttack(int MinDamage,int MaxDamage) {
         if (Tempoross.getId() == 10572) {
@@ -175,15 +178,15 @@ public class Tempoross {
     }
 
     public void start(ArrayList<Player> participants) {
-        initMap();
+        //initMap();
         spawnNpcs();
         players.addAll(participants);
         players.forEach(player -> {
             player.temporossGame = this;
             if (Random.get() <= 50) {
-                player.getMovement().teleport(map.convertX(3036), map.convertY(2981));
+                player.getMovement().teleport(3036, 2981);
             } else {
-                player.getMovement().teleport(map.convertX(3059), map.convertY(2975));
+                player.getMovement().teleport(3059, 2975);
             }
             player.teleportListener = p -> {
                 clearActivityOf(p);
@@ -216,7 +219,7 @@ public class Tempoross {
     private static void stunCannons() {
         if (Energy >= 10) {
             if (Random.rollPercent(25)) {
-                GameObject.forObj(41238, map.convertX(3040), map.convertY(2979), 0, gameObject -> {
+                GameObject.forObj(41238, 3040, 2979, 0, gameObject -> {
                     World.startEvent(event -> {
                         gameObject.setId(41242);
                         event.delay(2);
@@ -224,7 +227,7 @@ public class Tempoross {
                 });
             }
             if (Random.rollPercent(25)) {
-                GameObject.forObj(41239, map.convertX(3040), map.convertY(2974), 0, gameObject -> {
+                GameObject.forObj(41239, 3040, 2974, 0, gameObject -> {
                     World.startEvent(event -> {
                         gameObject.setId(41242);
                         event.delay(2);
@@ -232,7 +235,7 @@ public class Tempoross {
                 });
             }
             if (Random.rollPercent(25)) {
-                GameObject.forObj(41240, map.convertX(3054), map.convertY(2980), 0, gameObject -> {
+                GameObject.forObj(41240, 3054, 2980, 0, gameObject -> {
                     World.startEvent(event -> {
                         gameObject.setId(41242);
                         event.delay(2);
@@ -240,7 +243,7 @@ public class Tempoross {
                 });
             }
             if (Random.rollPercent(25)) {
-                GameObject.forObj(41241, map.convertX(3054), map.convertY(2975), 0, gameObject -> {
+                GameObject.forObj(41241, 3054, 2975, 0, gameObject -> {
                     World.startEvent(event -> {
                         gameObject.setId(41242);
                         event.delay(2);
@@ -281,8 +284,8 @@ public class Tempoross {
         }
 
         players.clear();
-        map.destroy(); // For Instances
-        map = null;
+        //map.destroy(); // For Instances
+        //map = null;
         ended = true;
     }
 

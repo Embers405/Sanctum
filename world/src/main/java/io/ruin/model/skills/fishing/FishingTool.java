@@ -16,6 +16,7 @@ public enum FishingTool {
     ANGLER_ROD(307, 13431, 622, 623),
     DRAGON_HARPOON(21028, 7402),
     KARAMBWAN_VESSEL(3157, 3150, 1193, 1193),
+    INFERNAL_HARPOON(21031,7402),
     CRYSTAL_HARPOON(23762,618);
     public final int id;
 

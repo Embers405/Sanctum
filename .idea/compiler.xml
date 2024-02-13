@@ -13,10 +13,13 @@
         <module name="drako.world.main" />
       </profile>
     </annotationProcessing>
-<<<<<<< HEAD
-    <bytecodeTargetLevel target="11" />
-=======
-    <bytecodeTargetLevel target="17" />
->>>>>>> 4796b299ea305dbf03aa2f75d4b91cc171d36e26
+    <bytecodeTargetLevel target="11">
+      <module name="OpenOSRS.runelite-mixins" target="1.8" />
+      <module name="OpenOSRS.runelite-mixins.main" target="1.8" />
+      <module name="OpenOSRS.runelite-mixins.test" target="1.8" />
+      <module name="OpenOSRS.runescape-client" target="1.8" />
+      <module name="OpenOSRS.runescape-client.main" target="1.8" />
+      <module name="OpenOSRS.runescape-client.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

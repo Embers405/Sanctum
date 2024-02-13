@@ -14,10 +14,7 @@ import io.ruin.model.entity.shared.LockType;
 import io.ruin.model.entity.shared.listeners.LoginListener;
 import io.ruin.model.entity.shared.listeners.LogoutListener;
 import io.ruin.model.entity.shared.listeners.SpawnListener;
-import io.ruin.model.inter.AccessMasks;
-import io.ruin.model.inter.Interface;
-import io.ruin.model.inter.InterfaceHandler;
-import io.ruin.model.inter.InterfaceType;
+import io.ruin.model.inter.*;
 import io.ruin.model.inter.actions.SimpleAction;
 import io.ruin.model.inter.dialogue.MessageDialogue;
 import io.ruin.model.inter.dialogue.NPCDialogue;
@@ -42,6 +39,9 @@ public class StarterGuide {
     private static final NPC GUIDE = SpawnListener.first(306);
 
     static {
+        NPCDef.get(307).ignoreOccupiedTiles = true;
+        NPCAction.register(GUIDE, "talk-to", (player, npc) ->
+                DonatorUpgrade.openDonator(player));
         InterfaceHandler.register(1020, h -> {
 
             h.actions[2] = (SimpleAction) p -> p.closeInterface(InterfaceType.MAIN);
@@ -143,7 +143,6 @@ public class StarterGuide {
             }
         });
     }
-
     private static void optionsDialogue(Player player, NPC npc) {
         player.dialogue(new NPCDialogue(npc, "Hello " + player.getName() + ", is there something I could assist you with?"),
                 new OptionsDialogue(

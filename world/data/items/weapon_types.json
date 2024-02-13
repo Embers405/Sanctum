@@ -2298,6 +2298,47 @@
       824
     ]
   },
+  "DRAGON_HARPOON": {
+    "config": 17,
+    "maxDistance": 1,
+    "attackTicks": 4,
+    "attackAnimation": 396,
+    "defendAnimation": 397,
+    "equipSound": 2238,
+    "attackSound": 2517,
+    "attackSets": [
+      {
+        "child": 3,
+        "type": "ACCURATE",
+        "style": "STAB"
+      },
+      {
+        "child": 7,
+        "type": "AGGRESSIVE",
+        "style": "STAB"
+      },
+      {
+        "child": 11,
+        "type": "AGGRESSIVE",
+        "style": "SLASH",
+        "attackAnimation": 395
+      },
+      {
+        "child": 15,
+        "type": "DEFENSIVE",
+        "style": "STAB"
+      }
+    ],
+    "renderAnimations": [
+      808,
+      823,
+      819,
+      820,
+      821,
+      822,
+      824
+    ]
+  },
   "DAGGER": {
     "config": 17,
     "maxDistance": 1,

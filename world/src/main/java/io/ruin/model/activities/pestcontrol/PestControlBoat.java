@@ -19,7 +19,7 @@ public final class PestControlBoat {
 	/**
 	 * The interface id accompanying the Pest Control boat.
 	 */
-	private static final int OVERLAY = 407;
+	public static final int OVERLAY = 407;
 
 	/**
 	 * The lowest amount of participants required to play this activity.
