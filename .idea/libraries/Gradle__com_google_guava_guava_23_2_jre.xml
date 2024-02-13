@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.guava:guava:23.2-jre" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.google.guava" artifactId="guava" version="23.2-jre" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/23.2-jre/a1a3e54263d357d2ecadcb3f5e7eb6464c66fe93/guava-23.2-jre.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

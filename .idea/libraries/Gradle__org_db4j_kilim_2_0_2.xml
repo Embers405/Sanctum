@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.db4j:kilim:2.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.db4j" artifactId="kilim" version="2.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.db4j/kilim/2.0.2/2ecc731b60d8321fa70d076b78a96852b88e55e2/kilim-2.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

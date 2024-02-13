@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":runelite-mixins:test" external.linked.project.path="$MODULE_DIR$/../../../runelite/runelite-mixins" external.root.project.path="$MODULE_DIR$/../../../runelite" external.system.id="GRADLE" external.system.module.group="com.openosrs" external.system.module.type="sourceSet" external.system.module.version="4.10.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output-test url="file://$MODULE_DIR$/../../../runelite/runelite-mixins/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../runelite/runelite-mixins/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="OpenOSRS.runelite-mixins.main" />
+  </component>
+  <component name="TestModuleProperties" production-module="OpenOSRS.runelite-mixins.main" />
+</module>

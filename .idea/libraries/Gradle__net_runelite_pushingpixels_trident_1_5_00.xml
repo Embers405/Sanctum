@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.pushingpixels:trident:1.5.00" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.pushingpixels" artifactId="trident" version="1.5.00" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.pushingpixels/trident/1.5.00/e8e2efc9ae40ede3f19f4f78ab768125abdd1378/trident-1.5.00.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jgroups:jgroups:5.0.4.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jgroups" artifactId="jgroups" version="5.0.4.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/5.0.4.Final/1abdb7fdffc07f85e5f0b072b176b2f114f59b14/jgroups-5.0.4.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

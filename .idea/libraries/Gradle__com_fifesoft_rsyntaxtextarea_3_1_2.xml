@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fifesoft:rsyntaxtextarea:3.1.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.fifesoft" artifactId="rsyntaxtextarea" version="3.1.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fifesoft/rsyntaxtextarea/3.1.2/d7b4588faf4e7abf5455b0b40e71a5a20249ac73/rsyntaxtextarea-3.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

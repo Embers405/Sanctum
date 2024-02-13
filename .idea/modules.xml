@@ -2,15 +2,69 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" filepath="$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" />
-=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.iml" filepath="$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cache/OpenOSRS.cache.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.iml" filepath="$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.test.iml" filepath="$PROJECT_DIR$/.idea/modules/deobfuscator/OpenOSRS.deobfuscator.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.iml" filepath="$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/http-api/OpenOSRS.http-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/injection-annotations/OpenOSRS.injection-annotations.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.iml" filepath="$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.main.iml" filepath="$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.test.iml" filepath="$PROJECT_DIR$/.idea/modules/injector/OpenOSRS.injector.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-api/OpenOSRS.runelite-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-client/OpenOSRS.runelite-client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-jshell/OpenOSRS.runelite-jshell.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-mixins/OpenOSRS.runelite-mixins.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runelite-script-assembler-plugin/OpenOSRS.runelite-script-assembler-plugin.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-api/OpenOSRS.runescape-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/runescape-client/OpenOSRS.runescape-client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenOSRS.test.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenOSRS.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.iml" filepath="$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.main.iml" filepath="$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.test.iml" filepath="$PROJECT_DIR$/.idea/modules/wiki-scraper/OpenOSRS.wiki-scraper.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/central/drako.central.iml" filepath="$PROJECT_DIR$/.idea/modules/central/drako.central.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/central/drako.central.main.iml" filepath="$PROJECT_DIR$/.idea/modules/central/drako.central.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/central/drako.central.test.iml" filepath="$PROJECT_DIR$/.idea/modules/central/drako.central.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/drako.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/drako.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/drako.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/drako.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/drako.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.main.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/drako.test.iml" filepath="$PROJECT_DIR$/.idea/modules/drako.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/update/drako.update.iml" filepath="$PROJECT_DIR$/.idea/modules/update/drako.update.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" filepath="$PROJECT_DIR$/.idea/modules/update/drako.update.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/update/drako.update.test.iml" filepath="$PROJECT_DIR$/.idea/modules/update/drako.update.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/world/drako.world.iml" filepath="$PROJECT_DIR$/.idea/modules/world/drako.world.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/world/drako.world.main.iml" filepath="$PROJECT_DIR$/.idea/modules/world/drako.world.main.iml" />
->>>>>>> 4796b299ea305dbf03aa2f75d4b91cc171d36e26
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/world/drako.world.test.iml" filepath="$PROJECT_DIR$/.idea/modules/world/drako.world.test.iml" />
     </modules>
   </component>
 </project>

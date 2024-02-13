@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.jocl:jocl:macos-arm64:1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.jocl" artifactId="jocl" version="1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.jocl/jocl/1.0/9a471ed096af4c8a618ec1654615c1c9cabcab56/jocl-1.0-macos-arm64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

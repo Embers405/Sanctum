@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.undertow:undertow-core:2.2.10.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.undertow" artifactId="undertow-core" version="2.2.10.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-core/2.2.10.Final/7ff056650ee5abc8cf6772825e819bf6dd30c466/undertow-core-2.2.10.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

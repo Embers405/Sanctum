@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.petitparser:java-petitparser:2.3.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.petitparser" artifactId="java-petitparser" version="2.3.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser/java-petitparser/2.3.1/fe07e04e0532661037ef93767b7aaf5b1d9549fb/java-petitparser-2.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

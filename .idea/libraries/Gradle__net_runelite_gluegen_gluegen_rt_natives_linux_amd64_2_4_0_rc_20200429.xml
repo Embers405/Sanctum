@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.gluegen:gluegen-rt:natives-linux-amd64:2.4.0-rc-20200429" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.gluegen" artifactId="gluegen-rt" version="2.4.0-rc-20200429" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.gluegen/gluegen-rt/2.4.0-rc-20200429/fc953e1a9fef427a987bc3dd22a84022caa7a4a6/gluegen-rt-2.4.0-rc-20200429-natives-linux-amd64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

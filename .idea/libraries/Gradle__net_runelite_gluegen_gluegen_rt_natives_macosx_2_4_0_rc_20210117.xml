@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.gluegen:gluegen-rt-natives-macosx:2.4.0-rc-20210117" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.gluegen" artifactId="gluegen-rt-natives-macosx" version="2.4.0-rc-20210117" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.gluegen/gluegen-rt-natives-macosx/2.4.0-rc-20210117/92ab566f145adad4b6fa761a73415198c3dabc64/gluegen-rt-natives-macosx-2.4.0-rc-20210117.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.petitparser.java-petitparser:petitparser-smalltalk:2.3.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.petitparser.java-petitparser" artifactId="petitparser-smalltalk" version="2.3.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser.java-petitparser/petitparser-smalltalk/2.3.1/31a03502006e3f541664c15b288fa025cd5a1897/petitparser-smalltalk-2.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

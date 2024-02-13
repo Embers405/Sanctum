@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.jogl:jogl-all-natives-macosx:2.4.0-rc-20210117" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.jogl" artifactId="jogl-all-natives-macosx" version="2.4.0-rc-20210117" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.jogl/jogl-all-natives-macosx/2.4.0-rc-20210117/fcddf9224d406d662983c935fc83bef9a7f2954b/jogl-all-natives-macosx-2.4.0-rc-20210117.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

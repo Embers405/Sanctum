@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.rs:cache:165" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.rs" artifactId="cache" version="165" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.rs/cache/165/736deff0f8f2cdc4b2d6c47861f5e8a2662b44e8/cache-165.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

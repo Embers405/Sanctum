@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite:orange-extensions:1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite" artifactId="orange-extensions" version="1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite/orange-extensions/1.0/eda7b2520ec14a1588901828b0a93c677cef6afa/orange-extensions-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.runelite.jogl:jogl-all:natives-windows-i586:2.4.0-rc-20200429" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.runelite.jogl" artifactId="jogl-all" version="2.4.0-rc-20200429" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.runelite.jogl/jogl-all/2.4.0-rc-20200429/148d816e95fb5a2bba10da4d8bba7594f17ec7f5/jogl-all-2.4.0-rc-20200429-natives-windows-i586.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
