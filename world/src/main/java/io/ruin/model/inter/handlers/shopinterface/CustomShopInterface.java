@@ -18,11 +18,11 @@ public class CustomShopInterface {
         InterfaceHandler.register(Interface.CUSTOM_SHOP, h -> {
             h.actions[16] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-              //      player.closeInterface(InterfaceType.MAIN);
+                    //      player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "Melee Store");
+                    player.getPacketSender().sendString(836, 14, "Melee Supplies");
                     player.setShopIdentifier(1);
                     handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.MELEE_STORE);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
@@ -30,11 +30,11 @@ public class CustomShopInterface {
             };
             h.actions[18] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "Ranged Store");
+                    player.getPacketSender().sendString(836, 14, "Ranged Supplies");
                     player.setShopIdentifier(2);
                     handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.RANGED_STORE);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
@@ -42,11 +42,11 @@ public class CustomShopInterface {
             };
             h.actions[20] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "Magic Store");
+                    player.getPacketSender().sendString(836, 14, "Magic Supplies");
                     player.setShopIdentifier(3);
                     handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.MAGIC_STORE);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
@@ -54,35 +54,29 @@ public class CustomShopInterface {
             };
             h.actions[22] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "Jewelry Store");
+                    player.getPacketSender().sendString(836, 14, "Jewellery Store");
                     player.setShopIdentifier(4);
                     handleEnteringShop(player, CustomShop.JEWELRY_STORE);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
                 }
             };
             h.actions[24] = (DefaultAction) (player, option, slot, itemId) -> {
-                if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
-                    player.sendMessage("You can't access this shop.");
-                    return;
-                } else {
-                    player.getPacketSender().sendString(836, 14, "Untradeable Store");
-                    player.setShopIdentifier(5);
-                    handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.UNTRADEABLE_STORE);
-                    open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
-                }
+                player.getPacketSender().sendString(836, 14, "Untradeables Store");
+                player.setShopIdentifier(5);
+                handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.UNTRADEABLE_STORE);
+                open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
             };
             h.actions[26] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "PK Point Store");
+                    player.getPacketSender().sendString(836, 14, "Pk Point Rewards");
                     player.setShopIdentifier(6);
                     handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.PK_POINT_STORE);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
@@ -90,19 +84,19 @@ public class CustomShopInterface {
             };
             h.actions[28] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
-                    player.getPacketSender().sendString(836, 14, "Misc Store");
+                    player.getPacketSender().sendString(836, 14, "Consumables");
                     player.setShopIdentifier(7);
-                    handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.MISC_STORE);
+                    handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.CONSUMABLES);
                     open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
                 }
             };
             h.actions[30] = (DefaultAction) (player, option, slot, itemId) -> {
                 if (player.getGameMode().isIronMan()) {
-                //    player.closeInterface(InterfaceType.MAIN);
+                    //    player.closeInterface(InterfaceType.MAIN);
                     player.sendMessage("You can't access this shop.");
                     return;
                 } else {
@@ -113,17 +107,17 @@ public class CustomShopInterface {
                 }
             };
             h.actions[32] = (DefaultAction) (player, option, slot, itemId) -> {
-                    player.getPacketSender().sendString(836, 14, "Donator Store");
-                    player.setShopIdentifier(9);
-                    handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.DONATOR_STORE);
-                    open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
+                player.getPacketSender().sendString(836, 14, "Donator Store");
+                player.setShopIdentifier(9);
+                handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.DONATOR_STORE);
+                open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
 
             };
             h.actions[35] = (DefaultAction) (player, option, slot, itemId) -> {
-                    player.getPacketSender().sendString(836, 14, "Vote Store");
-                    player.setShopIdentifier(10);
-                    handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.VOTE_STORE);
-                    open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
+                player.getPacketSender().sendString(836, 14, "Voting Rewards");
+                player.setShopIdentifier(10);
+                handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.VOTE_STORE);
+                open(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.getItemsFromShop(player));
 
             };
             h.actions[41] = (DefaultAction) (player, option, slot, itemId) -> {
@@ -276,7 +270,7 @@ public class CustomShopInterface {
 
         player.getInventory().add(itemDef.id, amount);
 
-        player.getCollectionLog().collect(itemDef.id, amount);
+        player.getCollectionLog().collectItems(itemDef.id, amount);
 
         customShop.refreshShop();
     }
@@ -344,7 +338,7 @@ public class CustomShopInterface {
     }
 
     public static void sell(Player player, ShopItem customShopItem, io.ruin.model.inter.handlers.shopinterface.CustomShop customShop,
-                             int price, int itemId, int amount) {
+                            int price, int itemId, int amount) {
 
         if (customShop.getCurrency() != Currency.BLOOD_MONEY) {
             player.sendMessage("You can't sell any items to this store.");
@@ -394,14 +388,18 @@ public class CustomShopInterface {
             ItemDef def = ItemDef.get(selectedItem.getItemId());
 
             if (def != null) {
-                player.sendMessage(def.name + " costs " + NumberUtils.formatNumber(selectedItem.getPrice())
-                        + " " + StringUtils.fixCaps(customShop.getCurrency().toString().replace("_", " ")) + "."
+                player.sendMessage(def.name + " currently costs <col=8B0000>" + NumberUtils.formatNumber(selectedItem.getPrice())
+                        + "</col> " + StringUtils.fixCaps(customShop.getCurrency().toString().replace("_", " ")) + "."
                 );
             }
         }
     }
 
     public static void open(Player player, Item[] shopItems) {
+        if (player.getGameMode().isIronMan()) {
+            player.sendMessage("Ironman accounts may not use these shops.");
+            return;
+        }
         player.getPacketSender().sendItems(-1, 1, 93, player.getInventory().getItems());
         player.getPacketSender().sendItems(10005, shopItems);
         if(player.getShopIdentifier() < 1) {
@@ -409,7 +407,7 @@ public class CustomShopInterface {
         }
         handleEnteringShop(player, io.ruin.model.inter.handlers.shopinterface.CustomShop.MELEE_STORE);
         player.getPacketSender().sendClientScript(917, "ii", -1, -1);
-        player.getPacketSender().sendClientScript(10198, 11802, 11235, 12904, 4736, 21295, 20528, 23685, 6739);
+        player.getPacketSender().sendClientScript(10198, 4151, 21902, 22296, 6585, 13072, 13652, 12695, 6739);
         player.getPacketSender().sendClientScript(10197);
         player.getPacketSender().sendClientScript(149, "iiiiiisssss", 19726336, 93, 4, 7, 0, -1,
                 "Value<col=ff9040>", "Sell 1<col=ff9040>", "Sell 5<col=ff9040>",
