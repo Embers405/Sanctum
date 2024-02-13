@@ -77,7 +77,7 @@ public class World extends EventWorker {
     public static final int spawnableOffset = 100000;
 
    // public static final Position HOME = new Position(1702, 3746, 0); old home
-   public static final Position HOME = new Position(3102, 3509, 0); // new home
+   public static final Position HOME = new Position(1497, 3590, 0); // new home
     public static final Position EDGEHOME = new Position(3088, 3501, 0);
     public static final Position DEATHS_DOMAIN = new Position(3174, 5727, 0);
 
