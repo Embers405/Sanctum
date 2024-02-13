@@ -222,9 +222,9 @@ public class WellofGoodwill {
     }
 
     public static void updateState() {
-        if (STATE == WellState.ACTIVE) {
+        if (STATE == WellState.INACTIVE) {
             if (getMinutesRemaining() <= 0) {
-                Broadcast.WORLD.sendNews(Icon.ANNOUNCEMENT, "Fountain Of Uhld: ", "The Fountain Of Uhld is no longer granting "  +".");
+                Broadcast.WORLD.sendNews(Icon.ANNOUNCEMENT, "Fountain Of Uhld: ", "The Fountain Of Uhld is no longer granting "  +capitalize(perkName)+ ".");
                 setDefaults();
                 EmbedBuilder eb = new EmbedBuilder();
                 eb.setTitle("The Fountain Of Uhld  is no longer granting");
