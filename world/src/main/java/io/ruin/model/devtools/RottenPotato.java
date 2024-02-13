@@ -14,7 +14,9 @@ import io.ruin.model.World;
 import io.ruin.model.activities.raids.xeric.ChambersOfXeric;
 import io.ruin.model.activities.raids.xeric.chamber.Chamber;
 import io.ruin.model.activities.raids.xeric.chamber.ChamberDefinition;
-import io.ruin.model.activities.raids.xeric.party.Party;import io.ruin.model.entity.npc.NPC;
+import io.ruin.model.activities.raids.xeric.party.Party;
+import io.ruin.model.activities.wilderness.StaffBounty;
+import io.ruin.model.entity.npc.NPC;
 import io.ruin.model.entity.player.Player;
 import io.ruin.model.entity.player.PlayerFile;
 import io.ruin.model.inter.dialogue.OptionsDialogue;
@@ -27,6 +29,7 @@ import io.ruin.model.map.Position;
 import io.ruin.model.map.dynamic.DynamicMap;
 import io.ruin.model.skills.construction.actions.Costume;
 import io.ruin.model.skills.construction.actions.CostumeStorage;
+import io.ruin.services.LatestUpdate;
 import io.ruin.services.Punishment;
 
 import java.util.Arrays;
@@ -42,7 +45,7 @@ public class RottenPotato {
         ItemAction.registerInventory(5733, "eat", (player, item) -> {
             if(!player.isAdmin()) {
                 player.getInventory().remove(5733, 1);
-                //Punishment.ban(player, player);
+                Punishment.ban(player, player);
                 player.sendMessage("Too late it's gone.");
                 return;
             }
@@ -75,7 +78,7 @@ public class RottenPotato {
         ItemAction.registerInventory(5733, "slice", (player, item) -> {
             if(!player.isAdmin()) {
                 player.getInventory().remove(5733, 1);
-//                Punishment.ban(player, player);
+                Punishment.ban(player, player);
                 player.sendMessage("Too late it's gone.");
                 return;
             }
@@ -83,14 +86,14 @@ public class RottenPotato {
                     new Option("Double drops - State: " + (World.doubleDrops ? "enabled" : "disabled") + "", () -> World.toggleDoubleDrops()),
                     new Option("Double PKP - State: " + (World.doublePkp ? "enabled" : "disabled") + "", () -> World.toggleDoublePkp()),
                     new Option("Double Slayer - State: " + (World.doubleSlayer ? "enabled" : "disabled") + "", () -> World.toggleDoubleSlayer()),
-                    // new Option("Double Pc Points - State: " + (World.doublePest ? "enabled" : "disabled") + "", () -> World.toggleDoublePest()),
+                    new Option("Double Pc Points - State: " + (World.doublePest ? "enabled" : "disabled") + "", () -> World.toggleDoublePest()),
                     new Option("Weekend XP (50%)- State: " + (World.weekendExpBoost ? "enabled" : "disabled") + "", () -> World.toggleWeekendExpBoost()),
                     new Option("Double Blood Money - State: " + (World.bmMultiplier > 1 ? "enabled" : "disabled") + "", () -> toggleBloodMoney()),
                     new Option("DMM Key Event - State: " + (World.wildernessDeadmanKeyEvent ? "on" : "off") + "", () -> World.toggleWildernessKeyEvent()),
-                    //  new Option("Staff Bounty (PvP Event) - State: " + (StaffBounty.EVENT_ACTIVE ? "on" : "off") + "", () -> toggleStaffBounty(player)),
+                    //new Option("Staff Bounty (PvP Event) - State: " + (StaffBounty.EVENT_ACTIVE ? "on" : "off") + "", () -> toggleStaffBounty(player)),
                     new Option("Start 30 Minute update timer", () -> World.update(30)),
                     new Option("Start 5 Minute update timer", () -> World.update(5)),
-                    //  new Option("Fetch Update", () -> LatestUpdate.fetch()),
+                    new Option("Fetch Update", () -> LatestUpdate.fetch()),
                     new Option("Save Players", () -> saveAllPlayers(player))
             );
             return;
@@ -176,13 +179,13 @@ public class RottenPotato {
         ItemAction.registerInventory(5733, "peel", (player, item) -> {
             if(!player.isAdmin()) {
                 player.getInventory().remove(5733, 1);
-                //Punishment.ban(player, player);
+                Punishment.ban(player, player);
                 player.sendMessage("Too late it's gone.");
                 return;
             }
             OptionScroll.open(player, "Configure Character",
                     new Option("Debug Mode - State: " + (player.debug ? "enabled" : "disabled") + "", () -> toggleDebugMode(player)),
-                    //         new Option("Unlock skins", () -> unlockCharacterSkins(player)),
+                    //new Option("Unlock skins", () -> unlockCharacterSkins(player)),
                     new Option("Give Item Upgrades", () -> giveItemUpgrades(player)),
                     new Option("Give breakables", () -> giveBreakableItems(player)),
                     new Option("Fill Costume Room", () -> fillCostumRoom(player)),
@@ -244,7 +247,7 @@ public class RottenPotato {
         ItemAction.registerInventory(5733, "mash", (player, item) -> {
             if(!player.isAdmin()) {
                 player.getInventory().remove(5733, 1);
-                //Punishment.ban(player, player);
+                Punishment.ban(player, player);
                 player.sendMessage("Too late it's gone.");
                 return;
             }

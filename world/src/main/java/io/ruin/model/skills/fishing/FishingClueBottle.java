@@ -41,12 +41,12 @@ public enum FishingClueBottle {
         }
     }
 
-/*    static {
+    static {
         for (FishingClueBottle clueBottle : values())
             ItemAction.registerInventory(clueBottle.bottleId, "open", (player, item) -> {
                 item.setId(clueBottle.clueType.clueId);
                 player.sendMessage("You crack the bottle and find a clue scroll inside!");
             });
-    }*/
+    }
 
 }
