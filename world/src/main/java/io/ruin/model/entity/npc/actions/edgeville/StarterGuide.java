@@ -40,9 +40,6 @@ public class StarterGuide {
     private static final NPC GUIDE = SpawnListener.first(306);
 
     static {
-        NPCDef.get(307).ignoreOccupiedTiles = true;
-        NPCAction.register(GUIDE, "talk-to", (player, npc) ->
-                DonatorUpgrade.openDonator(player));
         InterfaceHandler.register(1020, h -> {
 
             h.actions[2] = (SimpleAction) p -> p.closeInterface(InterfaceType.MAIN);
