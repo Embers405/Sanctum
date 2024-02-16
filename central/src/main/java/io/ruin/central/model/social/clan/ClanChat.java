@@ -30,7 +30,11 @@ public class ClanChat extends ClanContainer {
 
     public void init(Player player) {
         this.sendSettings(player);
-        if (!this.lastName.equals("")) {
+        String defaultClanChatName = "Help";
+        if(this.active == null){
+            this.join(player, defaultClanChatName);
+        }
+        if (!this.lastName.equals("Help")) {
             this.join(player, this.lastName);
         }
     }
