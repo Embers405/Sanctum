@@ -1322,7 +1322,7 @@ public class Player extends PlayerAttributes {
         this.confClientType = info.confClientType;
 
         if(position == null)
-            position = new Position(1692, 3746, 0);
+            position = new Position(1497, 3590, 0);
         else
             position.updateFirstChunk();
         lastPosition = position.copy();
