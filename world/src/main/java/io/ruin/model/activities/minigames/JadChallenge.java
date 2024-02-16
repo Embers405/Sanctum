@@ -18,6 +18,7 @@ import io.ruin.model.map.Position;
 import io.ruin.model.map.dynamic.DynamicMap;
 import io.ruin.model.map.object.actions.ObjectAction;
 import io.ruin.utility.Broadcast;
+import lombok.Getter;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -47,13 +48,16 @@ public class JadChallenge {
 
     private static final int TZ_TOK_JAD = 7704, HOST = 2180;
 
+    @Getter
     private Player player;
 
+    @Getter
     @Expose
     private int wave;
 
     private ActivityTimer timer;
 
+    @Getter
     private DynamicMap map;
 
     private int spawnOffset;
@@ -78,10 +82,6 @@ public class JadChallenge {
 
     public static JadChallenge getInstance(NPC npc) {
         return npc.get("CHALLENGE");
-    }
-
-    public DynamicMap getMap() {
-        return map;
     }
 
     private void stop(boolean logout)
@@ -131,14 +131,6 @@ public class JadChallenge {
     private void handleDeath() {
         player.getMovement().teleport(EXIT);
         player.sendMessage("You have been defeated!");
-    }
-
-    public int getWave() {
-        return wave;
-    }
-
-    public Player getPlayer() {
-        return player;
     }
 
     public static void join(Player player, int wave) {

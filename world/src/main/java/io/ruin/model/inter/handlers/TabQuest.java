@@ -65,7 +65,7 @@ public class TabQuest {
         COMPONENT_19(19, player -> "Website", (SimpleAction) player -> player.openUrl("https://obsidian-ps.com/")),
         COMPONENT_20(20, player -> "Community", (SimpleAction) player -> player.openUrl("https://obsidian-ps.com/")),
         COMPONENT_21(21, player -> "Discord", (SimpleAction) player -> player.openUrl("https://discord.gg/Jf3zxrrKjZ")),//TODO: Change to our link
-        COMPONENT_22(22, player -> "Store", (SimpleAction) player -> player.openUrl("https://obsidian-ps.com/store.php"));
+        COMPONENT_22(22, player -> "Store", (SimpleAction) player -> player.openUrl("https://sanctum.rip/store/index.php"));
 
         private int componentId;
         private TextField text;

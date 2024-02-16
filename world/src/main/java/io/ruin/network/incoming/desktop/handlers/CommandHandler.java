@@ -775,7 +775,7 @@ public class CommandHandler implements Incoming {
              */
             case "voteboss":
             case "donboss": {
-                Bounds voteboss = new Bounds(1760,3571,1760,3572,0);
+                Bounds voteboss = new Bounds(1758, 4700, 1764, 4710,0);
                 teleport(player, voteboss.randomPosition());
                 return true;
             }
@@ -786,10 +786,10 @@ public class CommandHandler implements Incoming {
                 return true;
             }
 
-            case "Obsidian":
+
             case "donate":
             case "store": {
-                player.openUrl(World.type.getWorldName() + " Store", "https://obsidian-ps.com/store.php");
+                player.openUrl(World.type.getWorldName() + " Store", "https://sanctum.rip/store/index.php");
                 return true;
             }
 
@@ -2854,16 +2854,17 @@ public class CommandHandler implements Incoming {
              * Npc commands
              */
             case "npc": {
-                int npcId = Integer.parseInt(args[0]);
-                int count = Integer.parseInt(args[1]);
+                int npcId = Integer.valueOf(args[0]);
+                int walkRange = 0;
+                if (args.length > 1) {
+                    walkRange = Integer.parseInt(args[1]);
+                }
                 NPCDef def = NPCDef.get(npcId);
                 if(def == null) {
                     player.sendMessage("Invalid npc id: " + npcId);
                     return true;
                 }
-                for (int i = 0; i < count; i++) {
-                    new NPC(npcId).spawn(player.getPosition().getX(), player.getPosition().getY(), player.getPosition().getZ(), 0).getCombat().setAllowRespawn(false);
-                }
+                new NPC(npcId).spawn(player.getPosition().getX(), player.getPosition().getY(), player.getPosition().getZ(), walkRange).getCombat().setAllowRespawn(false);
                 return true;
             }
 

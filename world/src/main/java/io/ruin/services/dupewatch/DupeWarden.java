@@ -123,9 +123,9 @@ public class DupeWarden {
     private static long totalPriceOf(ItemContainer container) {
         long l = 0;
         for (Item item : container.getItems()) {
-            if (item != null && item.getDef().highAlchValue > 0 && !item.getDef().free) {
+            if (item != null && item.getDef() != null && item.getDef().highAlchValue > 0 && !item.getDef().free) {
                 l += ((long) item.getDef().highAlchValue * item.getAmount());
-            } else if (item != null && item.getDef().lowAlchValue > 0 && !item.getDef().free) {
+            } else if (item != null && item.getDef() != null  && item.getDef().lowAlchValue > 0 && !item.getDef().free) {
                 l += ((long) item.getDef().lowAlchValue * item.getAmount());
             } else if (item != null) {
                 l += item.getAmount();

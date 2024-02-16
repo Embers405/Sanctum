@@ -22,8 +22,6 @@ public class PlayerLogin extends LoginRequest {
 
     private void send() {
         info.name = info.name.replaceAll("_", " ");
-        if(OfflineMode.loadPlayer(this))
-            return;
         CentralClient.sendLogin(info.ipAddress, info.name, info.password, info.email, info.macAddress, info.uuid, info.tfaCode, info.tfaTrust, info.tfaTrustValue & 0xff);
     }
 

@@ -16,7 +16,7 @@ public class DiscordConnection extends ListenerAdapter {
 
 	public static JDA jda;
 
-	String token = "";
+	String token = "MTE3MjM5OTQwMTM3MzgxNDkwOA.GVb0cJ.rpjwRzOEub9P8sbMXSfVEyU4w16SmnjKPaiP2w";
 
 	public static final String CHANNEL_PUNISHMENTS = "902658112614432819";
 

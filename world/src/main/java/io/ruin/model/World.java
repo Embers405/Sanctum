@@ -77,7 +77,7 @@ public class World extends EventWorker {
     public static final int spawnableOffset = 100000;
 
    // public static final Position HOME = new Position(1702, 3746, 0); old home
-   public static final Position HOME = new Position(1497, 3590, 0); // new home
+   public static final Position HOME = new Position(1497, 3591, 0); // new home
     public static final Position EDGEHOME = new Position(3088, 3501, 0);
     public static final Position DEATHS_DOMAIN = new Position(3174, 5727, 0);
 
@@ -377,7 +377,7 @@ public class World extends EventWorker {
             announcements = Arrays.asList(
                     "Need help? Join the \"help\" cc!",
                     "Make sure to vote to gain access to exclusive items!",
-                    "Looking to support Obsidian? Type ::store ingame!",
+                    "Looking to support Sanctum? Type ::store ingame!",
                     /*"Take the time to protect your account and set a bank pin and 2FA!",*/
                     "Please take the time to vote for us. It helps us out and takes two seconds! ::vote",
                     "Join ::discord to get closer to the community!"

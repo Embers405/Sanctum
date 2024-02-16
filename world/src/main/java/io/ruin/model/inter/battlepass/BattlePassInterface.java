@@ -25,7 +25,7 @@ public class BattlePassInterface {
             h.actions[108] = (DefaultAction) (player, option, slot, itemId) ->
                     player.getBattlePass().nextPage(player)
             ;
-            h.actions[32] = (SimpleAction) p -> p.openUrl("https://sanctum.rip/store/");
+            h.actions[32] = (SimpleAction) p -> p.openUrl("https://sanctum.rip/store/index.php");
 
         });
     }

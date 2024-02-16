@@ -24,7 +24,4 @@ public enum TemporossGameSettings {
         return landerExit;
     }
 
-    public String title() {
-        return null;
-    }
 }

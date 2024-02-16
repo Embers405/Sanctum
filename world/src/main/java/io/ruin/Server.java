@@ -160,12 +160,12 @@ public class Server extends ServerWrapper {
 //there's your issue you've not set up the databases correctly.
        // siteDb = new Database(properties.getProperty("database_host"), "drakodb", properties.getProperty("database_user"), properties.getProperty("database_password"));
 
-      //  gameDb = new Database("198.12.12.226", "ashihama_drako", "ashihama_drako", "eP35j32DeGIf");
+          //gameDb = new Database("73.130.50.93", "game", "Sanctum", "Tryhard123");
         //gameDb = new Database("127.0.0.1", "Runerogue", "root", "");
 
         //hsDb = new Database(properties.getProperty("database_host"), "obsidia1_hiscore", properties.getProperty("database_user"), properties.getProperty("database_password"));
 
-        DatabaseUtils.connect(new Database[]{ ,  }, errors -> {
+        DatabaseUtils.connect(new Database[]{,  }, errors -> {
             if (!errors.isEmpty()) {
                 for (Throwable t : errors)
                     logError("Database error", t);
@@ -184,11 +184,7 @@ public class Server extends ServerWrapper {
 
 
 
-
-       // GIMRepository.load();
-
-        //GIMRepository.load();
-
+        GIMRepository.load();
 
         Achievement.staticInit();
 

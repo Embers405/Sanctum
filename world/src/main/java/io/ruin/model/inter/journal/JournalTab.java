@@ -163,7 +163,7 @@ public class JournalTab {
          */
         DROP_TABLES(Tab.MISCELLANEOUS, t4++, player -> "View drop tables", (SimpleAction) Bestiary::open),
         EMPTY(Tab.MISCELLANEOUS, t4++, player -> "View Box drop tables", (SimpleAction) Bestiary::openBoxLoot),
-        EMPTY2(Tab.MISCELLANEOUS, t4++, player -> "View store", (SimpleAction) player -> player.openUrl("https://obsidian-ps.com/store.php")),
+        EMPTY2(Tab.MISCELLANEOUS, t4++, player -> "View store", (SimpleAction) player -> player.openUrl("https://sanctum.rip/store/index.php")),
         EMPTY3(Tab.MISCELLANEOUS, t4++, player -> "Join discord", (SimpleAction) player -> player.openUrl("https://discord.gg/Jf3zxrrKjZ")),
         //EMPTY3(Tab.MISCELLANEOUS, t4++),
 

@@ -1072,6 +1072,9 @@ public abstract class PlayerAttributes extends Entity {
 
     public AchievementStage[] achievementStages = new AchievementStage[Achievement.values().length];
 
+    @Expose public boolean guidebookMedium = false;
+    @Expose public int mediumAchievementsCompleted;
+
     /**
      * Gem bag
      */

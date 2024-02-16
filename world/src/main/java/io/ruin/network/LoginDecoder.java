@@ -182,7 +182,7 @@ public class LoginDecoder extends MessageDecoder<Channel> {
         in = new InBuffer(bytes);
         in.decode(keys, 0, bytes.length);
 
-/*        int mac_length = in.readUnsignedByte();
+       /* int mac_length = in.readUnsignedByte();
         byte[] mac_data = new byte[mac_length];
         in.readBytes(mac_data);
 
@@ -190,11 +190,11 @@ public class LoginDecoder extends MessageDecoder<Channel> {
         for (int index = 0; index < mac_data.length; index++) {
             sb.append(String.format("%02X%s", mac_data[index], (index < mac_length - 1) ? "-" : ""));
         }*/
-        String macAddress = "";//sb.toString();
+        String macAddress = ""; //sb.toString();
         String uuid = "";//in.readString();
         String name = in.readString();
         Pattern pattern = Pattern.compile("[A-Za-z0-9_ ]+");
-        if(name == null || name.length() > 12 || name.length() < 3 || (name = name.trim()).isEmpty() || !pattern.matcher(name).matches() || password == null || (password = password.trim()).isEmpty()) {
+        if(name == null || name.length() > 12 || name.length() < 3 || (name = name.trim()).isEmpty() ||  !pattern.matcher(name).matches() || password == null || (password = password.trim()).isEmpty()) {
             /**
              * Invalid login
              */
@@ -253,7 +253,7 @@ public class LoginDecoder extends MessageDecoder<Channel> {
             count = 0;
 
         for (Player player : Wilderness.players) {
-            if (player.getIpInt() == ip && ++count >= 2) {
+            if (player.getIpInt() == ip && ++count >= 4) {
                 return true;
             }
         }
@@ -265,7 +265,7 @@ public class LoginDecoder extends MessageDecoder<Channel> {
         int ip = IPAddress.toInt(IPAddress.get(channel)), count = 0;
 
         for (Player player : World.players) {
-            if (player.getIpInt() == ip && ++count >= 3) {
+            if (player.getIpInt() == ip && ++count >= 4) {
                 return true;
             }
         }

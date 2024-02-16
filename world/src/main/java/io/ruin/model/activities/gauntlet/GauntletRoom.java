@@ -30,8 +30,8 @@ public class GauntletRoom {
     private final int rotation; //the rooms rotation
     private boolean visible; //if the room is visible
     private boolean boss; //if the room is the boss room
- //   private List<ResourceNode> nodes = Lists.newArrayList();
-   // private List<PaletteTile> tiles = Lists.newArrayList();
+   // private List<ResourceNode> nodes = Lists.newArrayList();
+    //private List<PaletteTile> tiles = Lists.newArrayList();
     private List<NPC> npcs = Lists.newArrayList();
     private static final int NODE_LIMIT = 4;
     private final double monster_chance;
@@ -41,20 +41,20 @@ public class GauntletRoom {
      */
     public void generateResourceNodes(GauntletType type) {
         Bounds boundary = getBoundary();
-        /*for (int x = boundary.getMinimumX() + 3; x < boundary.getMaximumX() - 3; x++) {
+        for (int x = boundary.getMinimumX() + 3; x < boundary.getMaximumX() - 3; x++) {
             for (int y = boundary.getMinimumY() + 3; y < boundary.getMaximumY() - 3; y++) {
-                if (!Region.isBlocked(x, y, 1) && nodes.size() < NODE_LIMIT) {
-                    int chance = Misc.random(1000);
-                    if (chance <= 25) {
-                        GauntletResourceNodes nodeData = GauntletResourceNodes.getRandomNode();
+                //if (!Region.isBlocked(x, y, 1) && nodes.size() < NODE_LIMIT) {
+                  //  int chance = Misc.random(1000);
+                  //  if (chance <= 25) {
+                  //      GauntletResourceNodes nodeData = GauntletResourceNodes.getRandomNode();
                      //   ResourceNode node = new ResourceNode(nodeData.getObjectId(), nodeData.getHarvestAmount(), Position.of(x, y, 1));
                   //      Server.getGlobalObjects().add(node);
                     //    nodes.add(node);
-                    }
-                }
+                  //  }
+               // }
 
             }
-        }*/
+        }
     }
 
 

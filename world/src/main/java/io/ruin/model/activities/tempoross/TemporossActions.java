@@ -17,41 +17,42 @@ public class TemporossActions {
 
     static{
 
-        NPCAction.register(10571, 1, (player, npc) -> {
-            player.startEvent(event -> {
-                if (player.getInventory().contains(311)) {
-                    player.animate(618); // Normal Harpoon Normal Damage
-                    Tempoross.HarpoonAttack(5,10);
-                } else if (player.getInventory().contains(21028) || player.getEquipment().hasId(21028)) {
-                    player.animate(7402);// Dragon Harpoon Boosted Damage
-                    Tempoross.HarpoonAttack(10,15);
-                } else if (player.getInventory().contains(23762) || player.getEquipment().hasId(23762)) {
-                    player.animate(618);// Crystal Harpoon Boosted+ Damage
-                    Tempoross.HarpoonAttack(15,25);
-                } else {
-                    player.animate(6703);// Barehand -Normal Damage
-                    Tempoross.HarpoonAttack(1,5);
-                }
-
-            });
-        });
+//        NPCAction.register(10571, 1, (player, npc) -> {
+//            player.startEvent(event -> {
+//                if (player.getInventory().contains(311)) {
+//                    player.animate(618); // Normal Harpoon Normal Damage
+//                    Tempoross.HarpoonAttack(5,10);
+//                } else if (player.getInventory().contains(21028) || player.getEquipment().hasId(21028)) {
+//                    player.animate(7402);// Dragon Harpoon Boosted Damage
+//                    Tempoross.HarpoonAttack(10,15);
+//                } else if (player.getInventory().contains(23762) || player.getEquipment().hasId(23762)) {
+//                    player.animate(618);// Crystal Harpoon Boosted+ Damage
+//                    Tempoross.HarpoonAttack(15,25);
+//                } else {
+//                    player.animate(6703);// Barehand -Normal Damage
+//                    Tempoross.HarpoonAttack(1,5);
+//                }
+//
+//            });
+//        });
 
         NPCAction.register(10576,1, (player, npc) -> {
             player.startEvent(event -> {
                 int amount = player.getInventory().count(25565);
-                while (amount > 0) {
+                while (amount-- > 0) {
                     for(Item i : player.getInventory().getItems()) {
+                        if (i.getId() != 25565) {
+                            player.sendMessage("You don't have anymore " + ItemDef.get(i.getId()).name + " to fire!");
+                            return;
+                        }
                         if (i.getId() == 25565) {
                             player.animate(896);
-                            i.remove(); // remove the item from inventory
-                            Tempoross.cannon1ammo += 1;
+                            i.remove();
                             CannonAttack();
+                            Tempoross.cannon1ammo += 1;
                             event.delay(4);
-                            amount--; // decrement the amount of 25565 item
                         }
                     }
-                    if (amount > 0)
-                        player.sendMessage("You don't have anymore " + ItemDef.get(25565).name + " to fire!");
                 }
             });
         });
@@ -59,7 +60,7 @@ public class TemporossActions {
         NPCAction.register(10577,1, (player, npc) -> {
             player.startEvent(event -> {
                 int amount = player.getInventory().count(25565);
-                while (amount > 0) {
+                while (amount-- > 0) {
                     for(Item i : player.getInventory().getItems()) {
                         if (i.getId() != 25565) {
                             player.sendMessage("You don't have anymore " + ItemDef.get(i.getId()).name + " to fire!");
@@ -79,7 +80,7 @@ public class TemporossActions {
         NPCAction.register(10578, 1, (player, npc) -> {
             player.startEvent(event -> {
                 int amount = player.getInventory().count(25565);
-                while (amount > 0) {
+                while (amount-- > 0) {
                     for(Item i : player.getInventory().getItems()) {
                         if (i.getId() != 25565) {
                             player.sendMessage("You don't have anymore " + ItemDef.get(i.getId()).name + " to fire!");
@@ -99,7 +100,7 @@ public class TemporossActions {
         NPCAction.register(10579, 1, (player, npc) -> {
             player.startEvent(event -> {
                 int amount = player.getInventory().count(25565);
-                while (amount > 0) {
+                while (amount-- > 0) {
                     for(Item i : player.getInventory().getItems()) {
                         if (i.getId() != 25565) {
                             player.sendMessage("You don't have anymore " + ItemDef.get(i.getId()).name + " to fire!");
@@ -122,8 +123,8 @@ public class TemporossActions {
 
         ObjectAction.register(41305, 1, (player, obj) -> {
             if (!player.joinedTempoross) {
-               // player.sendMessage("Tempoross is currently disabled!");
-                LADDER.join(player, obj);
+                player.sendMessage("Tempoross is currently disabled!");
+//                LADDER.join(player, obj);
             } else {
                 LADDER.leave(player);
             }

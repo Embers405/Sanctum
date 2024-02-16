@@ -1,5 +1,7 @@
 package io.ruin.model.activities.leagues;
 
+import static io.ruin.model.activities.leagues.LeagueTaskDifficulty.*;
+
 /**
  * @author Greco
  * @since 01/08/2022

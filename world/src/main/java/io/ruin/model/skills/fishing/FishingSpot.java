@@ -68,15 +68,16 @@ public class FishingSpot {
     public void fish(Player player, NPC npc) {
         boolean barehand;
         Stat fishing = player.getStats().get(StatType.Fishing);
-        if (tool == FishingTool.HARPOON && hasSpecialHarpoon(player)) {
+        if (tool == FishingTool.HARPOON && hasDragonHarpoon(player)) {
             if(fishing.currentLevel < 61) {
                 player.sendMessage("You need a Fishing level of at least 61 to fish with a dragon harpoon.");
                 return;
             }
+
             tool = FishingTool.DRAGON_HARPOON;
         }
 
-        if(player.getInventory().contains(new Item(tool.id)) || (tool == FishingTool.DRAGON_HARPOON && hasSpecialHarpoon(player))) {
+        if(player.getInventory().contains(new Item(tool.id)) || (tool == FishingTool.HARPOON && hasDragonHarpoon(player))) {
             FishingCatch lowestCatch = regularCatches[0];
 
             if(fishing.currentLevel < lowestCatch.levelReq) {
@@ -254,16 +255,16 @@ public class FishingSpot {
         });
     }
 
-    private static boolean hasSpecialHarpoon(Player player) {
-        // Check if the player has a Dragon or Infernal Harpoon in the inventory
-        if (player.getInventory().hasId(FishingTool.DRAGON_HARPOON.id) || player.getInventory().hasId(FishingTool.INFERNAL_HARPOON.id))
+    private static boolean hasDragonHarpoon(Player player) {
+        if(player.getInventory().hasId(FishingTool.DRAGON_HARPOON.id))
             return true;
 
-        // Check if the player has a Dragon or Infernal Harpoon equipped in the weapon slot
-        ItemDef weapon = player.getEquipment().getDef(Equipment.SLOT_WEAPON);
-        return weapon != null && (weapon.id == FishingTool.DRAGON_HARPOON.id || weapon.id == FishingTool.INFERNAL_HARPOON.id);
-    }
+        ItemDef playerWeapon = player.getEquipment().getDef(Equipment.SLOT_WEAPON);
+        if(playerWeapon != null && playerWeapon.id == FishingTool.DRAGON_HARPOON.id)
+            return true;
 
+        return false;
+    }
 
     private void register(int npcId, String option) {
         NPCAction.register(npcId, option, this::fish);
@@ -495,7 +496,7 @@ public class FishingSpot {
                 .register(CAGE_HARPOON, "cage");
         new FishingSpot(FishingTool.HARPOON)
                 .regularCatches(FishingCatch.TUNA, FishingCatch.SWORDFISH)
-                //.barehandCatches(FishingCatch.BARBARIAN_TUNA, FishingCatch.BARBARIAN_SWORDFISH)
+                .barehandCatches(FishingCatch.BARBARIAN_TUNA, FishingCatch.BARBARIAN_SWORDFISH)
                 .register(CAGE_HARPOON, "harpoon");
 
         new FishingSpot(FishingTool.LOBSTER_POT)
@@ -570,8 +571,7 @@ public class FishingSpot {
         new FishingSpot(FishingTool.HARPOON)
                 .regularCatches(FishingCatch.SHARK)
                 .barehandCatches(FishingCatch.BARBARIAN_SHARK)
-               .register(BIG_NET_HARPOON, "harpoon");
-
+                .register(BIG_NET_HARPOON, "harpoon");
 
         new FishingSpot(FishingTool.BIG_FISHING_NET)
                 .regularCatches(FishingCatch.MACKEREL, FishingCatch.COD, FishingCatch.BASS)

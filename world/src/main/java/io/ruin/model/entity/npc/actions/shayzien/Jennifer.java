@@ -25,7 +25,7 @@ public class Jennifer {
         ));
 
         NPCAction.register(305, "trade", (player, npc) -> {
-            ShopManager.openIfExists(player, "TkM8uJwxziv95RI4khtS6DMFgGuqrJ");
+            ShopManager.openIfExists(player, "e522b145-fbaa-4746-8d71-6ad9808d2338");
         });
     }
 }

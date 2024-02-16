@@ -41,5 +41,11 @@ public class Grace {
                             });
                         }))
         ));
+        NPCAction.register(5919, "trade", (player, npc) -> {
+            ShopManager.openIfExists(player, "130e716b-eb95-479b-ab1e-2a3dbdc52c6f");
+        });
+
+
     }
+
 }

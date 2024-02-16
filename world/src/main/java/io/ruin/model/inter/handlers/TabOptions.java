@@ -120,7 +120,7 @@ public class TabOptions {
      * Bond Interface
      */
     public static void openBonds(Player player) {
-        player.sendURL("https://obsidian-ps.com/store.php");
+        player.sendURL("https://sanctum.rip/store/index.php");
     }
 
     /**

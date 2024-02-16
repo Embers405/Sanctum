@@ -82,7 +82,7 @@ public class DwarfCannon extends OwnedObject {
             new Bounds(2240, 9984, 2303, 10047, -1), //kraken cove
             new Bounds(3200, 10304, 3263, 10367, -1), //scorpia
             new Bounds(3520, 9664, 3583, 9727, -1), //barrows crypt
-            new Bounds(1990, 3526, 2112, 3648, -1), //Home
+            new Bounds(1470, 3538, 1584, 3597, -1), //Home
             new Bounds(2628, 2627, 2680, 2683, -1), //Pest control
             new Bounds(1247, 10144, 1411, 10296, -1), //Karluum dungeon
             new Bounds(3326, 3202, 3392, 3266, -1), //Duel arena

@@ -5,6 +5,7 @@ import io.ruin.model.achievements.listeners.experienced.*;
 import io.ruin.model.achievements.listeners.intro.CommenceSlaughter;
 import io.ruin.model.achievements.listeners.intro.TheBestiary;
 import io.ruin.model.achievements.listeners.master.ExpertRunecrafter;
+import io.ruin.model.achievements.listeners.medium.GuideBook;
 import io.ruin.model.achievements.listeners.novice.ImplingHunter;
 import io.ruin.model.achievements.listeners.novice.IntoTheAbyss;
 import io.ruin.model.achievements.listeners.novice.Lightness;
@@ -47,6 +48,7 @@ public enum Achievement {
     QUICK_HANDS(new QuickHands(), AchievementCategory.Experienced),
     MY_ARMS_PATCH(new MyArmsPatch(), AchievementCategory.Experienced),
     WELCOME_TO_THE_JUNGLE(new WelcomeToTheJungle(), AchievementCategory.Experienced),
+    GUIDE_BOOK(new GuideBook(), AchievementCategory.Medium),
     DEMON_SLAYER(new DemonSlayer(), AchievementCategory.Experienced),
 
     /**

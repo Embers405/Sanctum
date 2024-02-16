@@ -22,6 +22,7 @@ public class ObjectDef {
 
     public static Map<Integer, ObjectDef> LOADED = Maps.newConcurrentMap();
     public static ObjectDef[] LOADED_EXTRA = new ObjectDef[10];
+    private boolean boolean3;
 
     @SuppressWarnings("Duplicates")
     public static void load() {
@@ -220,9 +221,7 @@ public class ObjectDef {
                 retextureToFind[i_14_] = (short) in.readUnsignedShort();
                 textureToReplace[i_14_] = (short) in.readUnsignedShort();
             }
-        } else if (i == 60) //this was removed
-            mapMarkerId = in.readUnsignedShort();
-        else if (i == 61)
+        } else if (i == 61)
             in.readUnsignedShort(); // category
         else if (i == 62)
             rotated = true;
@@ -285,8 +284,9 @@ public class ObjectDef {
         } else if (i == 81)
             contouredGround = in.readUnsignedByte() * 256;
         else if (i == 82)
-            in.readUnsignedShort(); // setMapAreaId(is.readUnsignedShort());
-        else if (i == 89); // setRandomizeAnimStart(true);
+            mapMarkerId = in.readUnsignedShort(); // setMapAreaId(is.readUnsignedShort());
+        else if (i == 89)
+            this.boolean3 = false;// setRandomizeAnimStart(true);
         else if (i == 249) {
             int length = in.readUnsignedByte();
 

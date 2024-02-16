@@ -16,10 +16,10 @@ import java.sql.*;
 
 public class Votes implements Runnable{
 
-    public static final String HOST = "185.2.168.125";
-    public static final String USER = "obsidia1_juice";
-    public static final String PASS = "kresls112!";
-    public static final String DATABASE = "obsidia1_vote";
+    public static final String HOST = "23.254.130.200"; // website ip address
+    public static final String USER = "dpljyktb_Sanctum";
+    public static final String PASS = "WwHh12!!@@";
+    public static final String DATABASE = "dpljyktb_foxvote";
 
     private Player player;
     private Connection conn;
@@ -58,14 +58,14 @@ public class Votes implements Runnable{
                 if (Random.rollDie(10,1)) {
                     player.getInventory().addOrDrop(6829,1);
                     player.sendMessage("Congratulations upon voting, the vote master awarded you with a vote box!");
-                    Broadcast.GLOBAL.sendNews(player.getName() + " Just voted for Obsidian!, & won a vote box!");
+                    Broadcast.GLOBAL.sendNews(player.getName() + " Just voted for Sanctum!, & won a vote box!");
                 }
 
 //                Broadcast.WORLD.sendNews(player.getName() + " Just voted for Drako!, " + amount + " votes left until Vote Boss Spawns!");
 
                 System.out.println("[Vote] Vote claimed by "+name+". (sid: "+siteId+", ip: "+ipAddress+")");
                 if (amount <= 0) {
-                    new NPC(NpcID.AVATAR_OF_CREATION_10531).spawn(1777, 3572, 0, Direction.WEST, 1).getCombat().setAllowRespawn(false);
+                    new NPC(NpcID.AVATAR_OF_CREATION_10531).spawn(1761, 4705, 0, Direction.WEST, 1).getCombat().setAllowRespawn(false);
                     Broadcast.GLOBAL.sendNews("<shad=000000>"+ Color.BABY_BLUE.wrap("[VOTE BOSS] ")+"Avatar of creation Has just spawned! use ::voteboss to get there!</shad>");
                     amount = 50;
                     EmbedBuilder eb = new EmbedBuilder();

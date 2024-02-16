@@ -115,4 +115,19 @@ public class Bounds {
         return new Bounds(sw.swX, sw.swY, ne.neX, ne.neY, -1);
     }
 
+    public int getMinimumX() {
+        return swX;
+    }
+
+    public int getMaximumX() {
+        return neX;
+    }
+
+    public int getMinimumY() {
+        return swY;
+    }
+
+    public int getMaximumY() {
+        return neY;
+    }
 }

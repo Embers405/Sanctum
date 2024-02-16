@@ -131,7 +131,7 @@ public class Store implements Runnable{
                 } else {
                     amount -= paid;
                     if (amount <= 0) {
-                        new NPC(NpcID.AVATAR_OF_DESTRUCTION_10532).spawn(1777, 3572, 0, Direction.WEST, 1).getCombat().setAllowRespawn(false);
+                        new NPC(NpcID.AVATAR_OF_DESTRUCTION_10532).spawn(1761, 4705, 0, Direction.WEST, 1).getCombat().setAllowRespawn(false);
                         Broadcast.GLOBAL.sendNews("<shad=000000>"+ Color.BABY_BLUE.wrap("[DONATION BOSS] ")+"Avatar of destruction Has just spawned! use ::donboss to get there!</shad>");
                         amount = 100;
                         EmbedBuilder eb = new EmbedBuilder();
@@ -228,13 +228,13 @@ public class Store implements Runnable{
 
     public static int amount = 100;
 
-/*    static {
+    static {
         World.startEvent(e -> {
             while(true) {
                 e.delay(1500); //10 minutes
                 Broadcast.WORLD.sendNews(Icon.ANNOUNCEMENT, "Announcements", "Currently there is $" + Store.amount + " left until the donation boss spawns!");
             }
         });
-    }*/
+    }
 
 }

@@ -1,7 +1,7 @@
 package io.ruin.model.activities.tempoross;
 
 import io.ruin.model.World;
-//import io.ruin.model.activities.pestcontrol.PestControlGame;
+import io.ruin.model.activities.pestcontrol.PestControlGame;
 import io.ruin.model.entity.player.Player;
 import io.ruin.model.entity.shared.listeners.LogoutListener;
 import io.ruin.model.inter.InterfaceType;
@@ -10,16 +10,12 @@ import io.ruin.utility.TickDelay;
 
 import java.util.ArrayList;
 
-import static io.ruin.model.activities.pestcontrol.PestControlBoat.OVERLAY;
-import static io.ruin.model.activities.pvp.unrated.BattleGroundsQueue.updateOverlay;
-
 public class TemporossBoat {
 
     /**
      * The lowest amount of participants required to play this activity.
      */
     private static final int MINIMUM_PARTY_SIZE = 1;
-    private static final int OVERLAY = 1;
 
     /**
      * The collection of players awaiting within this boat.
@@ -30,6 +26,9 @@ public class TemporossBoat {
 
     private TemporossGameSettings settings;
 
+    /**
+     * The delay until the next {@link PestControlGame} is attempted to dispatch.
+     */
     public TickDelay nextDeparture = new TickDelay();
 
 
@@ -71,7 +70,7 @@ public class TemporossBoat {
         players.add(player);
         player.getMovement().teleport(3133, 2840);
         player.joinedTempoross = true;
-  //      player.openInterface(InterfaceType.PRIMARY_OVERLAY, OVERLAY);
+//        player.openInterface(InterfaceType.PRIMARY_OVERLAY, OVERLAY);
 //        player.getPacketSender().sendString(OVERLAY, 21, settings.title());
 //        player.getPacketSender().sendString(OVERLAY, 6, "Points: "+ player.pestPoints);
 //        updateOverlay();

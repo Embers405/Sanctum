@@ -40,7 +40,7 @@ public class TournamentViewingOrb {
     }
 
     static {
-        /**
+        /*
          * Viewing orb objects
          */
         ObjectAction.register(26741, "use", (player, obj) -> {
@@ -55,7 +55,7 @@ public class TournamentViewingOrb {
             player.openInterface(InterfaceType.INVENTORY, Interface.VIEWING_ORB_INTERFACE);
         });
 
-        /**
+        /*
          * Viewing orb interface handler
          */
         InterfaceHandler.register(Interface.VIEWING_ORB_INTERFACE, h -> {

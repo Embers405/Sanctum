@@ -14,7 +14,10 @@ import io.ruin.model.entity.shared.LockType;
 import io.ruin.model.entity.shared.listeners.LoginListener;
 import io.ruin.model.entity.shared.listeners.LogoutListener;
 import io.ruin.model.entity.shared.listeners.SpawnListener;
-import io.ruin.model.inter.*;
+import io.ruin.model.inter.AccessMasks;
+import io.ruin.model.inter.Interface;
+import io.ruin.model.inter.InterfaceHandler;
+import io.ruin.model.inter.InterfaceType;
 import io.ruin.model.inter.actions.SimpleAction;
 import io.ruin.model.inter.dialogue.MessageDialogue;
 import io.ruin.model.inter.dialogue.NPCDialogue;
@@ -25,7 +28,6 @@ import io.ruin.model.inter.utils.Option;
 import io.ruin.model.map.Direction;
 import io.ruin.model.stat.StatType;
 import io.ruin.network.central.CentralClient;
-import io.ruin.network.incoming.desktop.handlers.ClanHandler;
 import io.ruin.utility.Broadcast;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -107,6 +109,7 @@ public class StarterGuide {
                         new Option("No", player::closeDialogue))
         ));
         NPCAction.register(GUIDE, "talk-to", StarterGuide::optionsDialogue);
+
         LoginListener.register(player -> {
             for (Player p : World.players) {
                 if (p.newPlayer && !p.inTutorial) {
@@ -140,6 +143,7 @@ public class StarterGuide {
             }
         });
     }
+
     private static void optionsDialogue(Player player, NPC npc) {
         player.dialogue(new NPCDialogue(npc, "Hello " + player.getName() + ", is there something I could assist you with?"),
                 new OptionsDialogue(
@@ -204,7 +208,7 @@ public class StarterGuide {
                     event.delay(1);
                 }
             }
-            NPC guide = new NPC(306).spawn(1497,3587,0, Direction.NORTH, 0); // 307 is a copy of 306 without options so it doesnt get in other people's way
+            NPC guide = new NPC(306).spawn(1697,3746,0, Direction.EAST, 0); // 307 is a copy of 306 without options so it doesnt get in other people's way
             player.logoutListener = new LogoutListener().onLogout(p -> guide.remove());
             player.getPacketSender().sendHintIcon(guide);
             guide.face(player);
