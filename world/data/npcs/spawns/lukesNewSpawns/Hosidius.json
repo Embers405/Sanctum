@@ -5430,7 +5430,11 @@
 		"z": 0,
 		"direction": "S",
 		"walkRange": 1,
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "4643a9b8-4ccb-4180-bfbc-ad340319fef2",
+			"trade": "c1acaaeb-7e71-492d-97f1-ba2d38c90648"
+		}
 	},
 	{
 		"name": null,
@@ -5720,7 +5724,11 @@
 		"z": 0,
 		"direction": "S",
 		"walkRange": 1,
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "3a66d8c1-dd6f-444e-a91e-24ea1f0135c0",
+			"trade": "64473b09-f91f-44b6-93be-4c36b4d19133"
+		}
 	},
 	{
 		"name": null,
@@ -5730,7 +5738,11 @@
 		"z": 0,
 		"direction": "S",
 		"walkRange": 1,
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "81c7cb3a-f03f-4862-9d3e-3d63ddb64a8a",
+			"trade": "d8644890-1eb6-47c6-a074-ccb2833f8ea6"
+		}
 	},
 	{
 		"name": null,
@@ -5740,7 +5752,10 @@
 		"z": 0,
 		"direction": "S",
 		"walkRange": 1,
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "wYFqu6sHo3TQpbWgHGRtrD1VxeV7Jrrpe8rp8"
+		}
 	},
 	{
 		"name": null,
@@ -5980,7 +5995,10 @@
 		"z": 0,
 		"direction": "S",
 		"walkRange": 1,
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "a339b5c8-16be-4e82-b66e-37c15f5090ef"
+		}
 	},
 	{
 		"name": null,
@@ -13573,7 +13591,10 @@
 		"z": "0",
 		"direction": "W",
 		"walkRange": "1",
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"trade": "e522b145-fbaa-4746-8d71-6ad9808d2338"
+		}
 	},
 	{
 		"name": "Soldier",
@@ -15553,7 +15574,10 @@
 		"z": "0",
 		"direction": "W",
 		"walkRange": "1",
-		"world": "ECO"
+		"world": "ECO",
+		"shopOptions": {
+			"talk-to": "a339b5c8-16be-4e82-b66e-37c15f5090ef"
+		}
 	},
 	{
 		"name": "Shayda",

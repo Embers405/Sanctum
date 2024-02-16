@@ -85,8 +85,8 @@
   {
     "name": "Fountain Of Uhld",
     "id": "14750",
-    "x": "1691",
-    "y": "3751",
+    "x": "1516",
+    "y": "3574",
     "z": "0",
     "direction": "W",
     "walkRange": "0",
@@ -286,8 +286,8 @@
   {
     "name": "Vannaka",
     "id": 403,
-    "x": 1671,
-    "y": 3721,
+    "x": 1508,
+    "y": 3589,
     "z": 0,
     "direction": "N",
     "walkRange": 0,
@@ -298,8 +298,8 @@
   {
     "name": "Turael",
     "id": 401,
-    "x": 1670,
-    "y": 3721,
+    "x": 1508,
+    "y": 3589,
     "z": 0,
     "direction": "N",
     "walkRange": 0,
@@ -310,8 +310,8 @@
   {
     "name": "Konar Quo Maten",
     "id": 8623,
-    "x": 1669,
-    "y": 3721,
+    "x": 1509,
+    "y": 3589,
     "z": 0,
     "direction": "N",
     "walkRange": 0,
@@ -322,8 +322,8 @@
   {
     "name": "Nieve",
     "id": 6797,
-    "x": 1668,
-    "y": 3721,
+    "x": 1510,
+    "y": 3589,
     "z": 0,
     "direction": "N",
     "walkRange": 0,
@@ -382,10 +382,10 @@
   {
     "name": "Duradel",
     "id": 405,
-    "x": 1672,
-    "y": 3722,
+    "x": 1511,
+    "y": 3589,
     "z": 0,
-    "direction": "W",
+    "direction": "N",
     "walkRange": 0,
     "shopOptions": {
       "trade": "06bf1d5a-e4d8-49f5-9aac-6229a965b98a"

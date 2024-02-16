@@ -56,8 +56,8 @@ public class UserComparator7 extends AbstractUserComparator {
 
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
-			descriptor = "(II)V",
-			garbageValue = "-655513763"
+		descriptor = "(II)V",
+		garbageValue = "-655513763"
 	)
 	@Export("runWidgetOnLoadListener")
 	static void runWidgetOnLoadListener(int var0) {
@@ -67,13 +67,14 @@ public class UserComparator7 extends AbstractUserComparator {
 
 				for (int var2 = 0; var2 < var1.length; ++var2) {
 					Widget var3 = var1[var2];
-					if (var3 != null && var3.onLoad != null) {
+					if (var3.onLoad != null) {
 						ScriptEvent var4 = new ScriptEvent();
 						var4.widget = var3;
 						var4.args = var3.onLoad;
 						Skeleton.runScript(var4, 5000000, 0);
 					}
 				}
+
 			}
 		}
 	}

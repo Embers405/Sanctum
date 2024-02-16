@@ -33,6 +33,9 @@ dependencies {
 	}
 
 
+	dependencies {
+		implementation ("org.mindrot:jbcrypt:0.4")
+	}
 
 
 	implementation(kotlin("stdlib"))

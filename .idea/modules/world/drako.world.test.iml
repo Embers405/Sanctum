@@ -46,7 +46,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output-test url="file://$MODULE_DIR$/../../../world/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../world/src/test">
@@ -77,16 +77,8 @@
     <orderEntry type="library" name="Gradle: net.sf.jopt-simple:jopt-simple:5.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.db4j:kilim:2.0.2" level="project" />
     <orderEntry type="module" module-name="drako.core.main" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../core/build/libs/core.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="module" module-name="drako.update.main" />
+    <orderEntry type="library" name="Gradle: org.mindrot:jbcrypt:0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.31" level="project" />
     <orderEntry type="library" name="Gradle: com.typesafe:config:1.4.1" level="project" />
     <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.14.2" level="project" />
