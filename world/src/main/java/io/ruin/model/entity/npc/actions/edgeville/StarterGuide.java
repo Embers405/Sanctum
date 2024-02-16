@@ -208,7 +208,7 @@ public class StarterGuide {
                     event.delay(1);
                 }
             }
-            NPC guide = new NPC(306).spawn(1697,3746,0, Direction.EAST, 0); // 307 is a copy of 306 without options so it doesnt get in other people's way
+            NPC guide = new NPC(306).spawn(1497,3587,0, Direction.NORTH, 0); // 307 is a copy of 306 without options so it doesnt get in other people's way
             player.logoutListener = new LogoutListener().onLogout(p -> guide.remove());
             player.getPacketSender().sendHintIcon(guide);
             guide.face(player);

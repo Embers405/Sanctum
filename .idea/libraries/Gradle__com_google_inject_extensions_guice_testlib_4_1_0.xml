@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject.extensions/guice-testlib/4.1.0/69e6711c02047361dd7646a3d83ca2cb49f6fd4/guice-testlib-4.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject.extensions/guice-testlib/4.1.0/b1fa8dfe2ccd3ba18e9554f23535490a94e52477/guice-testlib-4.1.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

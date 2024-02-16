@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.pf4j/pf4j/3.6.0/9025adf3f680069bb1b52863c9ec70d341e09b0/pf4j-3.6.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.pf4j/pf4j/3.6.0/b8c2d58d9e1d6a4fc2a4784169cfffe8420bd9e4/pf4j-3.6.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

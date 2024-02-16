@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser.java-petitparser/petitparser-smalltalk/2.3.1/31a03502006e3f541664c15b288fa025cd5a1897/petitparser-smalltalk-2.3.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser.java-petitparser/petitparser-smalltalk/2.3.1/16e473d1ba9379560e8687350b09740b2577d8f3/petitparser-smalltalk-2.3.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

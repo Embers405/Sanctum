@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-smtp/4.1.72.Final/bf3098b665b4f78cdc508cad348ab62b0d238335/netty-codec-smtp-4.1.72.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-smtp/4.1.72.Final/593df6c875a22f08031b55467dc353ea2fa82cfb/netty-codec-smtp-4.1.72.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

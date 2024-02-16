@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-udt/4.1.72.Final/cbd8fe06848a96254a901f1b2637be0aa4d2fa64/netty-transport-udt-4.1.72.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-udt/4.1.72.Final/9ce8511bedd63013dac96ac55d093ab812883870/netty-transport-udt-4.1.72.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-kqueue/4.1.72.Final/fbcce97a6f9f79b8c5fc118bb838e7a4526d8efa/netty-transport-classes-kqueue-4.1.72.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-kqueue/4.1.72.Final/9d29e8cb613f4a522d86b9ac4c69fc86b65ec6fe/netty-transport-classes-kqueue-4.1.72.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

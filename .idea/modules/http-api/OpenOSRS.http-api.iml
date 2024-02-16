@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":http-api" external.linked.project.path="$MODULE_DIR$/../../../runelite/http-api" external.root.project.path="$MODULE_DIR$/../../../runelite" external.system.id="GRADLE" external.system.module.group="com.openosrs" external.system.module.version="4.10.0" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../runelite/http-api">
       <excludeFolder url="file://$MODULE_DIR$/../../../runelite/http-api/.gradle" />

@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser.java-petitparser/petitparser-json/2.3.1/7c1ba740ce223102264734b31ef35a9b446812e7/petitparser-json-2.3.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.petitparser.java-petitparser/petitparser-json/2.3.1/c984c37be6fa496be10963bccb98f7f07cd9c500/petitparser-json-2.3.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

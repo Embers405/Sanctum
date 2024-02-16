@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.j256.two-factor-auth/two-factor-auth/1.3/e961f88baae5bf1cc53b366c4954f3ffc6af4fe1/two-factor-auth-1.3.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.j256.two-factor-auth/two-factor-auth/1.3/2ab640823e09b3086bf121bbe22c34e656a6b917/two-factor-auth-1.3-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

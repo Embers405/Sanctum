@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-memcache/4.1.72.Final/a45e18d8f1458be114f36d3cd4ab390fec85845c/netty-codec-memcache-4.1.72.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-memcache/4.1.72.Final/c7755f2abd7bf42f1b2a758d9e1b573fc3421bfb/netty-codec-memcache-4.1.72.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

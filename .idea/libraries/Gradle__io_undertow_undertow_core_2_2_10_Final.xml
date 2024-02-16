@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-core/2.2.10.Final/7ff056650ee5abc8cf6772825e819bf6dd30c466/undertow-core-2.2.10.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-core/2.2.10.Final/e613dbb81640c0265c329568dbb2602259818771/undertow-core-2.2.10.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

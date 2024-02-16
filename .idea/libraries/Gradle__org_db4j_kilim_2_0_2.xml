@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.db4j/kilim/2.0.2/2ecc731b60d8321fa70d076b78a96852b88e55e2/kilim-2.0.2.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.db4j/kilim/2.0.2/a63ef86c2053d4112e2f18ab3feecd534672ace/kilim-2.0.2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

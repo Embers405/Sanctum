@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-stomp/4.1.72.Final/a57728ab2b6eafca676c55afc1753309a6ff0946/netty-codec-stomp-4.1.72.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-stomp/4.1.72.Final/285d17608cbf527f9270fc53e3f3284ef348c75f/netty-codec-stomp-4.1.72.Final-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

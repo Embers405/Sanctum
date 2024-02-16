@@ -5,6 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/5.0.0-alpha.12/d410ec991adaa5eeee0732e5207eaa5bf3cc88dd/JDA-5.0.0-alpha.12.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/5.0.0-alpha.12/81f5db16dab064e04b230166ffac3278d2ca4715/JDA-5.0.0-alpha.12-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
