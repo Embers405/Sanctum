@@ -35,15 +35,12 @@ public class ChatHandler implements Incoming {
             return;
         }
 
-
-
         if(type == 2) {
             message = message.substring(1, message.length());
             CentralClient.sendClanMessage(player.getUserId(), player.getClientGroupId(), message);
             Loggers.logClanChat(player.getUserId(), player.getName(), player.getIp(), message);
             String message1 = message;
             DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Clan Chat: " +player.getName() + ":  " + message1).queue();
-
             return;
         }
 
@@ -62,6 +59,6 @@ public class ChatHandler implements Incoming {
 
             player.getChatUpdate().set(shadow, effects, player.getClientGroupId(), type, message);
             Loggers.logPublicChat(player.getUserId(), player.getName(), player.getIp(), message, type, effects);
-            DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Public Chat: " +  player.getName() + ":  " + message).queue();
+        DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Public Chat: " +  player.getName() + ":  " + message).queue();
     }
 }

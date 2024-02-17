@@ -236,9 +236,9 @@ public class GroundItem {
         eb.addField("Amount: ", String.valueOf(amount), true);
         eb.setColor(new java.awt.Color(0xB00D03));
         DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
-
         if (getTimeDropped() > 0) { // this item was manually dropped by someone, log as trade
             Loggers.logDropTrade(player.getUserId(), originalOwner, player.getIp(), getDropperIp(), player.getName(), getDropperName(), id, amount, x, y, z, getTimeDropped());
+
         }
         if (id == 88 && !player.bootsOfLightnessTaken) {
             player.bootsOfLightnessTaken = true;

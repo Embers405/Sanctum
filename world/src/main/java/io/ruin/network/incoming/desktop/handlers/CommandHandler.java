@@ -1,5 +1,7 @@
 package io.ruin.network.incoming.desktop.handlers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.google.common.collect.Lists;
 import com.google.gson.GsonBuilder;
 import io.ruin.api.buffer.InBuffer;
@@ -85,11 +87,13 @@ import io.ruin.model.map.dynamic.DynamicMap;
 import io.ruin.model.map.ground.GroundItem;
 import io.ruin.model.map.object.GameObject;
 import io.ruin.model.map.route.RouteFinder;
+import io.ruin.model.shop.ShopManager;
 import io.ruin.model.skills.construction.*;
 import io.ruin.model.skills.construction.actions.Costume;
 import io.ruin.model.skills.construction.actions.CostumeStorage;
 import io.ruin.model.skills.events.CrystalTrees;
 import io.ruin.model.skills.events.ShootingStars;
+import io.ruin.model.skills.hunter.Impling;
 import io.ruin.model.skills.magic.SpellBook;
 import io.ruin.model.skills.magic.rune.Rune;
 import io.ruin.model.skills.mining.Mining;
@@ -139,8 +143,6 @@ public class CommandHandler implements Incoming {
 
 
     private static Position relativeBase;
-    private static String message1;
-
 
     @Override
     public void handle(Player player, InBuffer in, int opcode) {
@@ -488,6 +490,31 @@ public class CommandHandler implements Incoming {
                 new Thread(new Referral(player, name)).start();
                 return true;
             }
+
+//            case "fonttest": {
+//                int childId = Integer.valueOf(args[0]);
+//                int fontId = Integer.valueOf(args[1]);
+//                player.getPacketSender().sendClientScript(135, "ii", 701 << 16 | childId, fontId);
+//                return true;
+//            }
+
+//            case "preset": {
+//                try {
+//                    int id = Integer.valueOf(args[0]);
+//                    int index = id - 1;
+//                    PresetCustom preset;
+//                    if(index < 0 || index >= player.customPresets.length || (preset = player.customPresets[index]) == null)
+//                        player.sendMessage("Preset #" + id + " does not exist.");
+//                    else if(preset.allowSelect(player)) {
+//                        player.closeDialogue();
+//                        preset.selectFinish(player);
+//                    }
+//                } catch(Exception e) {
+//                    player.sendMessage("Invalid command usage. Example: [::preset 1]");
+//                }
+//                return true;
+//            }
+
             case "yell": {
                 boolean shadow = false;
                 if(Punishment.isMuted(player)) {
@@ -518,6 +545,7 @@ public class CommandHandler implements Incoming {
                 }
 
                 DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Yell: " + player.getName() + ":  " + message).queue();
+
 
                 boolean bypassFilter; //basically disallows players to filter staff yells.
                 int delaySeconds; //be sure this is set in ascending order.
@@ -612,7 +640,6 @@ public class CommandHandler implements Incoming {
                 }
 
                 Loggers.logYell(player.getUserId(), player.getName(), player.getIp(), message);
-
                 return true;
             }
             case "staff":
