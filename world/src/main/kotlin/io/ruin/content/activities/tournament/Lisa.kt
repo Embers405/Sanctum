@@ -5,12 +5,12 @@ import io.ruin.model.entity.shared.listeners.SpawnListener
 
 object Lisa {
 
-    private const val ID = 7316
+    private const val ID = -1
     private val NPC = SpawnListener.find(ID)[0]
 
 
     init {
-        pulse()
+       // pulse()
     }
 
     private fun pulse() = globalEvent {
