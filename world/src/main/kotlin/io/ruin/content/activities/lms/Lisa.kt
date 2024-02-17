@@ -12,11 +12,11 @@ import io.ruin.model.shop.ShopManager
  */
 object Lisa {
 
-    private const val ID = 8721
+    private const val ID = -1
     private val NPC = SpawnListener.find(ID)[0]
 
     init {
-        whenNpcClick(ID, 1) { player, lisa ->
+      /*  whenNpcClick(ID, 1) { player, lisa ->
             player.talkTo(lisa)
         }
         whenNpcClick(ID, 2) { player, lisa ->
@@ -25,7 +25,7 @@ object Lisa {
         whenNpcClick(ID, 3) { player, lisa ->
            ShopManager.getByUUID("093f2aef-46b4-4b40-943b-0934954ee124")?.open(player);//TODO Add lisa UUID
         }
-        pulse()
+        pulse()*/
     }
 
     private fun pulse() = globalEvent {

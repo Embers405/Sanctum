@@ -1,15 +1,5 @@
 [
   {
-    "name": "Horphis Teleporter NPC",
-    "id": "7046",
-    "x": "1693",
-    "y": "3749",
-    "z": "0",
-    "direction": "W",
-    "walkRange": "0",
-    "world": "ECO"
-  },
-  {
     "name": "Evil dave",
     "id": "901",
     "x": "1676",
@@ -20,19 +10,28 @@
     "world": "ECO"
   },
   {
+    "name": "Estate agent",
+    "id": 3097,
+    "x": 1515,
+    "y": 3551,
+    "z": 0,
+    "direction": "S",
+    "walkRange": 2
+  },
+  {
     "name": "Grand Exchange Clerk",
     "id": 2148,
-    "x": 1687,
-    "y": 3748,
+    "x": 1488,
+    "y": 3595,
     "z": 0,
-    "direction": "N",
+    "direction": "S",
     "walkRange": 0
   },
   {
     "name": "krystilia",
     "id": 7663,
-    "x": 1667,
-    "y": 3723,
+    "x": 1507,
+    "y": 3589,
     "z": 0,
     "direction": "N",
     "walkRange": 0
@@ -40,46 +39,10 @@
   {
     "name": "Grand Exchange Clerk",
     "id": 2149,
-    "x": 1685,
-    "y": 3748,
+    "x": 1488,
+    "y": 3589,
     "z": 0,
     "direction": "N",
-    "walkRange": 0
-  },
-  {
-    "name": "Grand Exchange Clerk",
-    "id": 2148,
-    "x": 1684,
-    "y": 3747,
-    "z": 0,
-    "direction": "W",
-    "walkRange": 0
-  },
-  {
-    "name": "Grand Exchange Clerk",
-    "id": 2149,
-    "x": 1684,
-    "y": 3745,
-    "z": 0,
-    "direction": "W",
-    "walkRange": 0
-  },
-  {
-    "name": "Grand Exchange Clerk",
-    "id": 2148,
-    "x": 1685,
-    "y": 3744,
-    "z": 0,
-    "direction": "S",
-    "walkRange": 0
-  },
-  {
-    "name": "Grand Exchange Clerk",
-    "id": 2149,
-    "x": 1687,
-    "y": 3744,
-    "z": 0,
-    "direction": "S",
     "walkRange": 0
   },
   {
@@ -139,6 +102,15 @@
     }
   },
   {
+    "name": "Ironman",
+    "id": 7941,
+    "x": 1522,
+    "y": 3574,
+    "z": 0,
+    "direction": "E",
+    "walkRange": 0
+  },
+  {
     "name": "Shop",
     "id": "2153",
     "x": "1699",
@@ -154,38 +126,18 @@
   {
     "name": "Makeover Mage",
     "id": "1307",
-    "x": "1679",
-    "y": "3743",
+    "x": "1492",
+    "y": "3589",
     "z": "0",
     "direction": "E",
     "walkRange": "0",
     "world": "ECO"
   },
   {
-    "name": "Justine",
-    "id": "8721",
-    "x": "1676",
-    "y": "3749",
-    "z": "0",
-    "direction": "S",
-    "walkRange": "0",
-    "world": "ECO"
-  },
-  {
-    "name": "Lisa",
-    "id": "7316",
-    "x": "1689",
-    "y": "3753",
-    "z": "0",
-    "direction": "S",
-    "walkRange": "0",
-    "world": "ECO"
-  },
-  {
     "name": "Mac Cape Shop",
     "id": "6481",
-    "x": "1690",
-    "y": "3750",
+    "x": "1496",
+    "y": "3589",
     "z": "0",
     "direction": "S",
     "walkRange": "2",
@@ -271,19 +223,6 @@
     }
   },
   {
-    "name": "Horvik",
-    "id": 2882,
-    "x": 1696,
-    "y": 3749,
-    "z": 0,
-    "direction": "E",
-    "walkRange": 0,
-    "world": "ECO",
-    "shopOptions": {
-      "trade": "GbU56FiI2KwFf9uLt5wSDlAbVUK5Jy"
-    }
-  },
-  {
     "name": "Vannaka",
     "id": 403,
     "x": 1508,
@@ -298,7 +237,7 @@
   {
     "name": "Turael",
     "id": 401,
-    "x": 1508,
+    "x": 1506,
     "y": 3589,
     "z": 0,
     "direction": "N",
@@ -368,15 +307,6 @@
     "y": 3713,
     "z": 0,
     "direction": "N",
-    "walkRange": 0
-  },
-  {
-    "name": "Estate agent",
-    "id": 3097,
-    "x": 1689,
-    "y": 3736,
-    "z": 0,
-    "direction": "S",
     "walkRange": 0
   },
   {
