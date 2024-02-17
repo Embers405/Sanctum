@@ -1,7 +1,6 @@
 package io.ruin.model.inter.handlers;
 
 import io.ruin.cache.ItemDef;
-import io.ruin.model.World;
 import io.ruin.model.activities.wilderness.BloodyChest;
 import io.ruin.model.entity.Entity;
 import io.ruin.model.entity.player.Player;
@@ -14,9 +13,11 @@ import io.ruin.model.map.Tile;
 import io.ruin.model.map.ground.GroundItem;
 import io.ruin.model.map.object.GameObject;
 import io.ruin.services.Loggers;
+import io.ruin.services.discord.DiscordConnection;
+import net.dv8tion.jda.api.EmbedBuilder;
 
-import static io.ruin.cache.ItemID.BLOOD_MONEY;
-import static io.ruin.cache.ItemID.COINS_995;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class TabInventory {
 
@@ -127,6 +128,16 @@ public class TabInventory {
                 }
             }
             Loggers.logDrop(player.getUserId(), player.getName(), player.getIp(), item.getId(), item.getAmount(), player.getAbsX(), player.getAbsY(), player.getHeight());
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            Date date = new Date();
+            EmbedBuilder eb = new EmbedBuilder();
+            eb.setTitle("An Item Was Droped Ingame!");
+            eb.addField("Username: ", player.getName(), true);
+            eb.addField("When: ", formatter.format(date), true);
+            eb.addField("Item: ", String.valueOf(itemId), true);
+            eb.addField("Amount: ", String.valueOf(item.getAmount()), true);
+            eb.setColor(new java.awt.Color(0xB00D03));
+            DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
             return;
         }
         if (option == def.equipOption) {

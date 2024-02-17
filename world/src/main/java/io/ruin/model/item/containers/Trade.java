@@ -1,8 +1,6 @@
 package io.ruin.model.item.containers;
 
 import io.ruin.Server;
-import io.ruin.api.utils.ServerWrapper;
-import io.ruin.model.entity.npc.actions.edgeville.SigmundTheMerch;
 import io.ruin.model.entity.player.Player;
 import io.ruin.model.inter.Interface;
 import io.ruin.model.inter.InterfaceAction;
@@ -17,14 +15,11 @@ import io.ruin.services.discord.DiscordConnection;
 import io.ruin.utility.TickDelay;
 import net.dv8tion.jda.api.EmbedBuilder;
 
-import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.HashMap;
 
-import static io.ruin.cache.ItemID.*;
+import static io.ruin.cache.ItemID.COINS_995;
+import static io.ruin.cache.ItemID.PLATINUM_TOKEN;
 
 public class Trade extends ItemContainer {
 
@@ -454,27 +449,26 @@ public class Trade extends ItemContainer {
                 eb.addField("Amount in platinum: ", String.valueOf(plat.getAmount()), true);
                 eb.addField("Date: ", formatter.format(date), true);
                 eb.setColor(new java.awt.Color(0xB00D03));
-                DiscordConnection.jda.getTextChannelById("984911109830086676").sendMessageEmbeds(eb.build()).queue();
+                DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessageEmbeds(eb.build()).queue();
             }
             for(Item item : getItems()) {
                 if(item != null)
                     Loggers.logSigmund(player.getUserId(), item.getId(), item.getAmount());
             }
-//            if(targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0))
-//                Loggers.logTrade(player.getUserId(), player.getName(), player.getIp(), -1, "Sigmund the Merchant", "", items, targetTrade.items);
+            if(targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0))
+                Loggers.logTrade(player.getUserId(), player.getName(), player.getIp(), player.getUserId(), player.getName(), player.getIp(),items, targetTrade.items);
         } else {
             /*
              * Trade my items
              */
-            for(Item item : getItems()) {
-                if(item != null)
+            for (Item item : getItems()) {
+                if (item != null)
                     targetTrade.player.getInventory().add(item);
             }
             sendMessage("Your trade with " + targetTrade.player.getName() + " was successful.");
             targetTrade.closeInterfaces();
-            if(targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0));
-                //Loggers.logTrade(player.getUserId(), player.getName(), player.getIp(), targetTrade.player.getUserId(), targetTrade.player.getName(), targetTrade.player.getIp(), items, targetTrade.items);
-                //Loggers.logTrade(player, targetTrade.player, items, targetTrade.items);
+            if (targetTrade.targetTrade != null && (itemCount > 0 || targetTrade.itemCount > 0)) ;
+            Loggers.logTrade(player.getUserId(), player.getName(), player.getIp(), targetTrade.player.getUserId(), targetTrade.player.getName(), targetTrade.player.getIp(), items, targetTrade.items);
         }
         targetTrade.closeInterfaces();
         stage = 0;

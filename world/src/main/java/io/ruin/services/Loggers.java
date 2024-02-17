@@ -4,10 +4,7 @@ import io.ruin.Server;
 import io.ruin.api.database.DatabaseUtils;
 import io.ruin.api.utils.JsonUtils;
 import io.ruin.api.utils.ServerWrapper;
-import io.ruin.api.utils.TimeUtils;
-import io.ruin.cache.Color;
 import io.ruin.cache.ItemDef;
-import io.ruin.cache.ItemID;
 import io.ruin.model.World;
 import io.ruin.model.entity.player.Player;
 import io.ruin.model.item.Item;
@@ -68,6 +65,7 @@ public class Loggers extends DatabaseUtils {
                 statement.setString(8, World.stage.name());
                 statement.setString(9, World.type.name());
                 statement.execute();
+                DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Your log message here").queue();
             }
         });
     }

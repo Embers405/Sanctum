@@ -9,7 +9,11 @@ import io.ruin.model.item.actions.impl.storage.LootingBag;
 import io.ruin.model.map.Position;
 import io.ruin.model.map.Tile;
 import io.ruin.services.Loggers;
+import io.ruin.services.discord.DiscordConnection;
+import net.dv8tion.jda.api.EmbedBuilder;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 import static io.ruin.cache.ItemID.BLOOD_MONEY;
@@ -222,6 +226,17 @@ public class GroundItem {
         }
 
         Loggers.logPickup(player.getUserId(), player.getName(), player.getIp(), id, amount, x, y, z);
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        EmbedBuilder eb = new EmbedBuilder();
+        eb.setTitle("An Item Was Picked up Ingame!");
+        eb.addField("Username: ", player.getName(), true);
+        eb.addField("When: ", formatter.format(date), true);
+        eb.addField("Item: ", ItemDef.get(id).name, true);
+        eb.addField("Amount: ", String.valueOf(amount), true);
+        eb.setColor(new java.awt.Color(0xB00D03));
+        DiscordConnection.jda.getTextChannelById("1195529785170997299").sendMessageEmbeds(eb.build()).queue();
+
         if (getTimeDropped() > 0) { // this item was manually dropped by someone, log as trade
             Loggers.logDropTrade(player.getUserId(), originalOwner, player.getIp(), getDropperIp(), player.getName(), getDropperName(), id, amount, x, y, z, getTimeDropped());
         }

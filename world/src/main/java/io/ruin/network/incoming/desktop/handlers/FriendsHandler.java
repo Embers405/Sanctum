@@ -8,6 +8,7 @@ import io.ruin.network.central.CentralClient;
 import io.ruin.network.incoming.Incoming;
 import io.ruin.services.Loggers;
 import io.ruin.services.Punishment;
+import io.ruin.services.discord.DiscordConnection;
 import io.ruin.utility.IdHolder;
 
 @IdHolder(ids = {5, 93, 55, 27, 91, 79})//@IdHolder(ids = {84, 80, 48, 56, 93, 67})
@@ -68,8 +69,8 @@ public class FriendsHandler implements Incoming {
             }
             CentralClient.sendPrivateMessage(player.getUserId(), player.getClientGroupId(), name, message);
             Loggers.logPrivateChat(player.getUserId(), player.getName(), player.getIp(), name, message);
+            DiscordConnection.jda.getTextChannelById("1208205604464889907").sendMessage("Private Chat: " + player.getClientGroup() + " - "  + player.getName() + ":  " + message).queue();
             return;
         }
     }
-
 }
